@@ -1,0 +1,2 @@
+# Dipendenze per giocare (python main.py)
+PySide6-Essentials>=6.6

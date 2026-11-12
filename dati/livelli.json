@@ -1,0 +1,10 @@
+{
+  "_descrizione": "Livelli di gioco, nell'ordine in cui compaiono nel menu. 'cartella' e' la sottocartella della radice delle bandiere. Se la cartella contiene sottocartelle, ognuna e' un gruppo di similarita'. 'distrattori': 'area' = le opzioni sbagliate vengono prima dallo stesso continente (e, se ci sono gruppi, dallo stesso gruppo dentro il continente); 'gruppo' = le opzioni sbagliate vengono sempre prima dallo stesso gruppo di similarita', anche se di un altro continente. I nomi visualizzati dei livelli noti stanno in flaggame/testi.py; per un livello nuovo si usa 'nome'.",
+  "livelli": [
+    {"id": "facile", "nome": "Facile", "cartella": "easy", "distrattori": "area"},
+    {"id": "intermedio", "nome": "Intermedio", "cartella": "intermediate", "distrattori": "area"},
+    {"id": "difficile", "nome": "Difficile", "cartella": "difficult", "distrattori": "area"},
+    {"id": "nerd", "nome": "Nerd", "cartella": "nerd", "distrattori": "gruppo"}
+  ],
+  "cartella_continenti": "theworld"
+}

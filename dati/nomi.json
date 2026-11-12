@@ -1,0 +1,1678 @@
+{
+  "_descrizione": "Nome visualizzato (in italiano) di ogni bandiera. La chiave e' l'identificativo ricavato dal nome del file: minuscolo, senza estensione, spazi normalizzati. 'alias' unisce file con nomi diversi che rappresentano la stessa bandiera; 'alias_esatti' confronta il nome del file rispettando le maiuscole (serve per 'Georgia.png' = stato USA, diverso da 'georgia.PNG' = stato del Caucaso). 'ritaglia_sfondo': true indica un'immagine con la bandiera disegnata su uno sfondo uniforme più grande (es. Nepal): il gioco toglie lo sfondo intorno, senza modificare il file.",
+  "alias": {
+    "jamaica (1)": "jamaica",
+    "south georgia": "south georgia and south sandwich islands"
+  },
+  "alias_esatti": {
+    "Georgia": "georgia (usa)"
+  },
+  "bandiere": {
+    "aaland island": {
+      "nome": "Isole Åland",
+      "iso": "AX",
+      "tipo": "territorio"
+    },
+    "adygea": {
+      "nome": "Adighezia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "afghanistan": {
+      "nome": "Afghanistan",
+      "iso": "AF",
+      "tipo": "stato"
+    },
+    "alabama": {
+      "nome": "Alabama",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "alaska": {
+      "nome": "Alaska",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "albania": {
+      "nome": "Albania",
+      "iso": "AL",
+      "tipo": "stato"
+    },
+    "algeria": {
+      "nome": "Algeria",
+      "iso": "DZ",
+      "tipo": "stato"
+    },
+    "altai": {
+      "nome": "Altaj",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "american samoa": {
+      "nome": "Samoa Americane",
+      "iso": "AS",
+      "tipo": "territorio"
+    },
+    "amur": {
+      "nome": "Amur",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "andorra": {
+      "nome": "Andorra",
+      "iso": "AD",
+      "tipo": "stato"
+    },
+    "angola": {
+      "nome": "Angola",
+      "iso": "AO",
+      "tipo": "stato"
+    },
+    "anguilla": {
+      "nome": "Anguilla",
+      "iso": "AI",
+      "tipo": "territorio"
+    },
+    "antartica": {
+      "nome": "Antartide",
+      "iso": "AQ",
+      "tipo": "altro"
+    },
+    "antigua e barbuda": {
+      "nome": "Antigua e Barbuda",
+      "iso": "AG",
+      "tipo": "stato"
+    },
+    "antille olandesi": {
+      "nome": "Antille Olandesi",
+      "iso": "AN",
+      "tipo": "territorio storico"
+    },
+    "argentina": {
+      "nome": "Argentina",
+      "iso": "AR",
+      "tipo": "stato"
+    },
+    "arizona": {
+      "nome": "Arizona",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "arkansas": {
+      "nome": "Arkansas",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "armenia": {
+      "nome": "Armenia",
+      "iso": "AM",
+      "tipo": "stato"
+    },
+    "aruba": {
+      "nome": "Aruba",
+      "iso": "AW",
+      "tipo": "territorio"
+    },
+    "ascension island": {
+      "nome": "Isola di Ascensione",
+      "iso": "AC",
+      "tipo": "territorio"
+    },
+    "australia": {
+      "nome": "Australia",
+      "iso": "AU",
+      "tipo": "stato"
+    },
+    "austria": {
+      "nome": "Austria",
+      "iso": "AT",
+      "tipo": "stato"
+    },
+    "azerbaijan": {
+      "nome": "Azerbaigian",
+      "iso": "AZ",
+      "tipo": "stato"
+    },
+    "bahamas": {
+      "nome": "Bahamas",
+      "iso": "BS",
+      "tipo": "stato"
+    },
+    "bahrain": {
+      "nome": "Bahrein",
+      "iso": "BH",
+      "tipo": "stato"
+    },
+    "bangladesh": {
+      "nome": "Bangladesh",
+      "iso": "BD",
+      "tipo": "stato"
+    },
+    "barbados": {
+      "nome": "Barbados",
+      "iso": "BB",
+      "tipo": "stato"
+    },
+    "bashkortostan": {
+      "nome": "Baschiria",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "basque country": {
+      "nome": "Paesi Baschi",
+      "iso": null,
+      "tipo": "regione"
+    },
+    "belarus": {
+      "nome": "Bielorussia",
+      "iso": "BY",
+      "tipo": "stato"
+    },
+    "belgium": {
+      "nome": "Belgio",
+      "iso": "BE",
+      "tipo": "stato"
+    },
+    "belize": {
+      "nome": "Belize",
+      "iso": "BZ",
+      "tipo": "stato"
+    },
+    "benin": {
+      "nome": "Benin",
+      "iso": "BJ",
+      "tipo": "stato"
+    },
+    "bermuda": {
+      "nome": "Bermuda",
+      "iso": "BM",
+      "tipo": "territorio"
+    },
+    "bhutan": {
+      "nome": "Bhutan",
+      "iso": "BT",
+      "tipo": "stato"
+    },
+    "birmania - burma - myanmar": {
+      "nome": "Myanmar (Birmania)",
+      "iso": "MM",
+      "tipo": "stato"
+    },
+    "bolivia": {
+      "nome": "Bolivia",
+      "iso": "BO",
+      "tipo": "stato"
+    },
+    "bosnia herzegovina": {
+      "nome": "Bosnia ed Erzegovina",
+      "iso": "BA",
+      "tipo": "stato"
+    },
+    "botswana": {
+      "nome": "Botswana",
+      "iso": "BW",
+      "tipo": "stato"
+    },
+    "brazil": {
+      "nome": "Brasile",
+      "iso": "BR",
+      "tipo": "stato"
+    },
+    "brunei": {
+      "nome": "Brunei",
+      "iso": "BN",
+      "tipo": "stato"
+    },
+    "bulgaria": {
+      "nome": "Bulgaria",
+      "iso": "BG",
+      "tipo": "stato"
+    },
+    "burkina faso": {
+      "nome": "Burkina Faso",
+      "iso": "BF",
+      "tipo": "stato"
+    },
+    "burundi": {
+      "nome": "Burundi",
+      "iso": "BI",
+      "tipo": "stato"
+    },
+    "buryatia": {
+      "nome": "Buriazia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "california": {
+      "nome": "California",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "cambodgia": {
+      "nome": "Cambogia",
+      "iso": "KH",
+      "tipo": "stato"
+    },
+    "cameroon": {
+      "nome": "Camerun",
+      "iso": "CM",
+      "tipo": "stato"
+    },
+    "canada": {
+      "nome": "Canada",
+      "iso": "CA",
+      "tipo": "stato"
+    },
+    "capo verde": {
+      "nome": "Capo Verde",
+      "iso": "CV",
+      "tipo": "stato"
+    },
+    "catalunia": {
+      "nome": "Catalogna",
+      "iso": null,
+      "tipo": "regione"
+    },
+    "cayman islands": {
+      "nome": "Isole Cayman",
+      "iso": "KY",
+      "tipo": "territorio"
+    },
+    "central african republic": {
+      "nome": "Repubblica Centrafricana",
+      "iso": "CF",
+      "tipo": "stato"
+    },
+    "chad": {
+      "nome": "Ciad",
+      "iso": "TD",
+      "tipo": "stato"
+    },
+    "chechnya": {
+      "nome": "Cecenia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "china": {
+      "nome": "Cina",
+      "iso": "CN",
+      "tipo": "stato"
+    },
+    "christmas island": {
+      "nome": "Isola di Natale",
+      "iso": "CX",
+      "tipo": "territorio"
+    },
+    "chukotka": {
+      "nome": "Čukotka",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "chuvashia": {
+      "nome": "Ciuvascia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "cile": {
+      "nome": "Cile",
+      "iso": "CL",
+      "tipo": "stato"
+    },
+    "cocos islands": {
+      "nome": "Isole Cocos",
+      "iso": "CC",
+      "tipo": "territorio"
+    },
+    "colombia": {
+      "nome": "Colombia",
+      "iso": "CO",
+      "tipo": "stato"
+    },
+    "colorado": {
+      "nome": "Colorado",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "comoros islands": {
+      "nome": "Comore",
+      "iso": "KM",
+      "tipo": "stato"
+    },
+    "congo": {
+      "nome": "Repubblica del Congo",
+      "iso": "CG",
+      "tipo": "stato"
+    },
+    "congo democratic republic": {
+      "nome": "Repubblica Democratica del Congo",
+      "iso": "CD",
+      "tipo": "stato"
+    },
+    "connecticut": {
+      "nome": "Connecticut",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "cook islands": {
+      "nome": "Isole Cook",
+      "iso": "CK",
+      "tipo": "territorio"
+    },
+    "corsica": {
+      "nome": "Corsica",
+      "iso": null,
+      "tipo": "regione"
+    },
+    "costa rica": {
+      "nome": "Costa Rica",
+      "iso": "CR",
+      "tipo": "stato"
+    },
+    "croatia": {
+      "nome": "Croazia",
+      "iso": "HR",
+      "tipo": "stato"
+    },
+    "cuba": {
+      "nome": "Cuba",
+      "iso": "CU",
+      "tipo": "stato"
+    },
+    "curacao": {
+      "nome": "Curaçao",
+      "iso": "CW",
+      "tipo": "territorio"
+    },
+    "cyprus": {
+      "nome": "Cipro",
+      "iso": "CY",
+      "tipo": "stato"
+    },
+    "czech republic": {
+      "nome": "Repubblica Ceca",
+      "iso": "CZ",
+      "tipo": "stato"
+    },
+    "delaware": {
+      "nome": "Delaware",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "denmark": {
+      "nome": "Danimarca",
+      "iso": "DK",
+      "tipo": "stato"
+    },
+    "djibouti": {
+      "nome": "Gibuti",
+      "iso": "DJ",
+      "tipo": "stato"
+    },
+    "dominica": {
+      "nome": "Dominica",
+      "iso": "DM",
+      "tipo": "stato"
+    },
+    "dominican republic": {
+      "nome": "Repubblica Dominicana",
+      "iso": "DO",
+      "tipo": "stato"
+    },
+    "east timor": {
+      "nome": "Timor Est",
+      "iso": "TL",
+      "tipo": "stato"
+    },
+    "ecuador": {
+      "nome": "Ecuador",
+      "iso": "EC",
+      "tipo": "stato"
+    },
+    "egypt": {
+      "nome": "Egitto",
+      "iso": "EG",
+      "tipo": "stato"
+    },
+    "el salvador": {
+      "nome": "El Salvador",
+      "iso": "SV",
+      "tipo": "stato"
+    },
+    "england": {
+      "nome": "Inghilterra",
+      "iso": "GB-ENG",
+      "tipo": "nazione costitutiva"
+    },
+    "equatorial guinea": {
+      "nome": "Guinea Equatoriale",
+      "iso": "GQ",
+      "tipo": "stato"
+    },
+    "eritrea": {
+      "nome": "Eritrea",
+      "iso": "ER",
+      "tipo": "stato"
+    },
+    "estonia": {
+      "nome": "Estonia",
+      "iso": "EE",
+      "tipo": "stato"
+    },
+    "etiopia": {
+      "nome": "Etiopia",
+      "iso": "ET",
+      "tipo": "stato"
+    },
+    "falklands": {
+      "nome": "Isole Falkland",
+      "iso": "FK",
+      "tipo": "territorio"
+    },
+    "faroe islands": {
+      "nome": "Isole Fær Øer",
+      "iso": "FO",
+      "tipo": "territorio"
+    },
+    "fiji": {
+      "nome": "Figi",
+      "iso": "FJ",
+      "tipo": "stato"
+    },
+    "finland": {
+      "nome": "Finlandia",
+      "iso": "FI",
+      "tipo": "stato"
+    },
+    "florida": {
+      "nome": "Florida",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "france": {
+      "nome": "Francia",
+      "iso": "FR",
+      "tipo": "stato"
+    },
+    "french guyana": {
+      "nome": "Guyana Francese",
+      "iso": "GF",
+      "tipo": "territorio"
+    },
+    "gabon": {
+      "nome": "Gabon",
+      "iso": "GA",
+      "tipo": "stato"
+    },
+    "gambia": {
+      "nome": "Gambia",
+      "iso": "GM",
+      "tipo": "stato"
+    },
+    "georgia": {
+      "nome": "Georgia",
+      "iso": "GE",
+      "tipo": "stato"
+    },
+    "georgia (usa)": {
+      "nome": "Georgia (USA)",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "germany": {
+      "nome": "Germania",
+      "iso": "DE",
+      "tipo": "stato"
+    },
+    "ghana": {
+      "nome": "Ghana",
+      "iso": "GH",
+      "tipo": "stato"
+    },
+    "gibraltar": {
+      "nome": "Gibilterra",
+      "iso": "GI",
+      "tipo": "territorio"
+    },
+    "greece": {
+      "nome": "Grecia",
+      "iso": "GR",
+      "tipo": "stato"
+    },
+    "greenland": {
+      "nome": "Groenlandia",
+      "iso": "GL",
+      "tipo": "territorio"
+    },
+    "grenada": {
+      "nome": "Grenada",
+      "iso": "GD",
+      "tipo": "stato"
+    },
+    "guam": {
+      "nome": "Guam",
+      "iso": "GU",
+      "tipo": "territorio"
+    },
+    "guatemala": {
+      "nome": "Guatemala",
+      "iso": "GT",
+      "tipo": "stato"
+    },
+    "guernsey": {
+      "nome": "Guernsey",
+      "iso": "GG",
+      "tipo": "territorio"
+    },
+    "guinea": {
+      "nome": "Guinea",
+      "iso": "GN",
+      "tipo": "stato"
+    },
+    "guinea bissau": {
+      "nome": "Guinea-Bissau",
+      "iso": "GW",
+      "tipo": "stato"
+    },
+    "guyana": {
+      "nome": "Guyana",
+      "iso": "GY",
+      "tipo": "stato"
+    },
+    "haiti": {
+      "nome": "Haiti",
+      "iso": "HT",
+      "tipo": "stato"
+    },
+    "hawai": {
+      "nome": "Hawaii",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "honduras": {
+      "nome": "Honduras",
+      "iso": "HN",
+      "tipo": "stato"
+    },
+    "hong kong": {
+      "nome": "Hong Kong",
+      "iso": "HK",
+      "tipo": "territorio"
+    },
+    "hungary": {
+      "nome": "Ungheria",
+      "iso": "HU",
+      "tipo": "stato"
+    },
+    "iceland": {
+      "nome": "Islanda",
+      "iso": "IS",
+      "tipo": "stato"
+    },
+    "idaho": {
+      "nome": "Idaho",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "illinois": {
+      "nome": "Illinois",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "india": {
+      "nome": "India",
+      "iso": "IN",
+      "tipo": "stato"
+    },
+    "indiana": {
+      "nome": "Indiana",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "indonesia": {
+      "nome": "Indonesia",
+      "iso": "ID",
+      "tipo": "stato"
+    },
+    "ingushetia": {
+      "nome": "Inguscezia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "iowa": {
+      "nome": "Iowa",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "iran": {
+      "nome": "Iran",
+      "iso": "IR",
+      "tipo": "stato"
+    },
+    "iraq": {
+      "nome": "Iraq",
+      "iso": "IQ",
+      "tipo": "stato"
+    },
+    "ireland": {
+      "nome": "Irlanda",
+      "iso": "IE",
+      "tipo": "stato"
+    },
+    "irkutsk": {
+      "nome": "Irkutsk",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "island of man": {
+      "nome": "Isola di Man",
+      "iso": "IM",
+      "tipo": "territorio"
+    },
+    "israel": {
+      "nome": "Israele",
+      "iso": "IL",
+      "tipo": "stato"
+    },
+    "italy": {
+      "nome": "Italia",
+      "iso": "IT",
+      "tipo": "stato"
+    },
+    "ivory coast": {
+      "nome": "Costa d'Avorio",
+      "iso": "CI",
+      "tipo": "stato"
+    },
+    "jamaica": {
+      "nome": "Giamaica",
+      "iso": "JM",
+      "tipo": "stato"
+    },
+    "japan": {
+      "nome": "Giappone",
+      "iso": "JP",
+      "tipo": "stato"
+    },
+    "jersey": {
+      "nome": "Jersey",
+      "iso": "JE",
+      "tipo": "territorio"
+    },
+    "jordan": {
+      "nome": "Giordania",
+      "iso": "JO",
+      "tipo": "stato"
+    },
+    "kabardino-balkaria": {
+      "nome": "Cabardino-Balcaria",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "kalmykia": {
+      "nome": "Calmucchia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "kamchatka": {
+      "nome": "Kamčatka",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "kansas": {
+      "nome": "Kansas",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "karachay-cherkessia": {
+      "nome": "Karačaj-Circassia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "karelia": {
+      "nome": "Carelia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "kazakhstan": {
+      "nome": "Kazakistan",
+      "iso": "KZ",
+      "tipo": "stato"
+    },
+    "kentucky": {
+      "nome": "Kentucky",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "kenya": {
+      "nome": "Kenya",
+      "iso": "KE",
+      "tipo": "stato"
+    },
+    "khakassia": {
+      "nome": "Chakassia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "kiribati": {
+      "nome": "Kiribati",
+      "iso": "KI",
+      "tipo": "stato"
+    },
+    "komi": {
+      "nome": "Komi",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "kosovo": {
+      "nome": "Kosovo",
+      "iso": "XK",
+      "tipo": "stato"
+    },
+    "kuwait": {
+      "nome": "Kuwait",
+      "iso": "KW",
+      "tipo": "stato"
+    },
+    "kyrgyzstan": {
+      "nome": "Kirghizistan",
+      "iso": "KG",
+      "tipo": "stato"
+    },
+    "laos": {
+      "nome": "Laos",
+      "iso": "LA",
+      "tipo": "stato"
+    },
+    "latvia": {
+      "nome": "Lettonia",
+      "iso": "LV",
+      "tipo": "stato"
+    },
+    "lebanon": {
+      "nome": "Libano",
+      "iso": "LB",
+      "tipo": "stato"
+    },
+    "lesotho": {
+      "nome": "Lesotho",
+      "iso": "LS",
+      "tipo": "stato"
+    },
+    "liberia": {
+      "nome": "Liberia",
+      "iso": "LR",
+      "tipo": "stato"
+    },
+    "libia": {
+      "nome": "Libia",
+      "iso": "LY",
+      "tipo": "stato"
+    },
+    "liechtenstein": {
+      "nome": "Liechtenstein",
+      "iso": "LI",
+      "tipo": "stato"
+    },
+    "lithuania": {
+      "nome": "Lituania",
+      "iso": "LT",
+      "tipo": "stato"
+    },
+    "louisiana": {
+      "nome": "Louisiana",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "luxembourg": {
+      "nome": "Lussemburgo",
+      "iso": "LU",
+      "tipo": "stato"
+    },
+    "macao": {
+      "nome": "Macao",
+      "iso": "MO",
+      "tipo": "territorio"
+    },
+    "macedonia": {
+      "nome": "Macedonia del Nord",
+      "iso": "MK",
+      "tipo": "stato"
+    },
+    "madagascar": {
+      "nome": "Madagascar",
+      "iso": "MG",
+      "tipo": "stato"
+    },
+    "magadan": {
+      "nome": "Magadan",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "maine": {
+      "nome": "Maine",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "malawi": {
+      "nome": "Malawi",
+      "iso": "MW",
+      "tipo": "stato"
+    },
+    "malaysia": {
+      "nome": "Malaysia",
+      "iso": "MY",
+      "tipo": "stato"
+    },
+    "maldives": {
+      "nome": "Maldive",
+      "iso": "MV",
+      "tipo": "stato"
+    },
+    "mali": {
+      "nome": "Mali",
+      "iso": "ML",
+      "tipo": "stato"
+    },
+    "malta": {
+      "nome": "Malta",
+      "iso": "MT",
+      "tipo": "stato"
+    },
+    "mariana islands": {
+      "nome": "Isole Marianne Settentrionali",
+      "iso": "MP",
+      "tipo": "territorio"
+    },
+    "marshall islands": {
+      "nome": "Isole Marshall",
+      "iso": "MH",
+      "tipo": "stato"
+    },
+    "martinica": {
+      "nome": "Martinica",
+      "iso": "MQ",
+      "tipo": "territorio"
+    },
+    "maryland": {
+      "nome": "Maryland",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "massachusetts": {
+      "nome": "Massachusetts",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "mauritania": {
+      "nome": "Mauritania",
+      "iso": "MR",
+      "tipo": "stato"
+    },
+    "mauritius": {
+      "nome": "Mauritius",
+      "iso": "MU",
+      "tipo": "stato"
+    },
+    "mexico": {
+      "nome": "Messico",
+      "iso": "MX",
+      "tipo": "stato"
+    },
+    "michigan": {
+      "nome": "Michigan",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "micronesia": {
+      "nome": "Micronesia",
+      "iso": "FM",
+      "tipo": "stato"
+    },
+    "minnesota": {
+      "nome": "Minnesota",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "mississippi": {
+      "nome": "Mississippi",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "missouri": {
+      "nome": "Missouri",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "moldova": {
+      "nome": "Moldavia",
+      "iso": "MD",
+      "tipo": "stato"
+    },
+    "monaco": {
+      "nome": "Monaco",
+      "iso": "MC",
+      "tipo": "stato"
+    },
+    "mongolia": {
+      "nome": "Mongolia",
+      "iso": "MN",
+      "tipo": "stato"
+    },
+    "montana": {
+      "nome": "Montana",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "montenegro": {
+      "nome": "Montenegro",
+      "iso": "ME",
+      "tipo": "stato"
+    },
+    "montserrat": {
+      "nome": "Montserrat",
+      "iso": "MS",
+      "tipo": "territorio"
+    },
+    "mordovia": {
+      "nome": "Mordovia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "morocco": {
+      "nome": "Marocco",
+      "iso": "MA",
+      "tipo": "stato"
+    },
+    "mozambique": {
+      "nome": "Mozambico",
+      "iso": "MZ",
+      "tipo": "stato"
+    },
+    "namibia": {
+      "nome": "Namibia",
+      "iso": "NA",
+      "tipo": "stato"
+    },
+    "nauru": {
+      "nome": "Nauru",
+      "iso": "NR",
+      "tipo": "stato"
+    },
+    "nebraska": {
+      "nome": "Nebraska",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "nenetsia": {
+      "nome": "Nenezia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "nepal": {
+      "nome": "Nepal",
+      "iso": "NP",
+      "tipo": "stato",
+      "ritaglia_sfondo": true
+    },
+    "netherlands": {
+      "nome": "Paesi Bassi",
+      "iso": "NL",
+      "tipo": "stato"
+    },
+    "nevada": {
+      "nome": "Nevada",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "new caledonia": {
+      "nome": "Nuova Caledonia",
+      "iso": "NC",
+      "tipo": "territorio"
+    },
+    "new hampshire": {
+      "nome": "New Hampshire",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "new jersey": {
+      "nome": "New Jersey",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "new mexico": {
+      "nome": "Nuovo Messico",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "new york": {
+      "nome": "New York",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "new zeland": {
+      "nome": "Nuova Zelanda",
+      "iso": "NZ",
+      "tipo": "stato"
+    },
+    "nicaragua": {
+      "nome": "Nicaragua",
+      "iso": "NI",
+      "tipo": "stato"
+    },
+    "niger": {
+      "nome": "Niger",
+      "iso": "NE",
+      "tipo": "stato"
+    },
+    "nigeria": {
+      "nome": "Nigeria",
+      "iso": "NG",
+      "tipo": "stato"
+    },
+    "niue island": {
+      "nome": "Niue",
+      "iso": "NU",
+      "tipo": "territorio"
+    },
+    "norfolk island": {
+      "nome": "Isola Norfolk",
+      "iso": "NF",
+      "tipo": "territorio"
+    },
+    "north carolina": {
+      "nome": "Carolina del Nord",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "north dakota": {
+      "nome": "Dakota del Nord",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "north korea": {
+      "nome": "Corea del Nord",
+      "iso": "KP",
+      "tipo": "stato"
+    },
+    "north ossetia-alania": {
+      "nome": "Ossezia del Nord-Alania",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "northern ireland": {
+      "nome": "Irlanda del Nord",
+      "iso": "GB-NIR",
+      "tipo": "nazione costitutiva"
+    },
+    "norway": {
+      "nome": "Norvegia",
+      "iso": "NO",
+      "tipo": "stato"
+    },
+    "novosibirsk": {
+      "nome": "Novosibirsk",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "ohio": {
+      "nome": "Ohio",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "oklahoma": {
+      "nome": "Oklahoma",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "oman": {
+      "nome": "Oman",
+      "iso": "OM",
+      "tipo": "stato"
+    },
+    "omsk": {
+      "nome": "Omsk",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "oregon": {
+      "nome": "Oregon",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "pakistan": {
+      "nome": "Pakistan",
+      "iso": "PK",
+      "tipo": "stato"
+    },
+    "palau": {
+      "nome": "Palau",
+      "iso": "PW",
+      "tipo": "stato"
+    },
+    "palestine": {
+      "nome": "Palestina",
+      "iso": "PS",
+      "tipo": "stato"
+    },
+    "panama": {
+      "nome": "Panama",
+      "iso": "PA",
+      "tipo": "stato"
+    },
+    "papua nuova guinea": {
+      "nome": "Papua Nuova Guinea",
+      "iso": "PG",
+      "tipo": "stato"
+    },
+    "paraguay": {
+      "nome": "Paraguay",
+      "iso": "PY",
+      "tipo": "stato"
+    },
+    "pennsylvania": {
+      "nome": "Pennsylvania",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "perm": {
+      "nome": "Perm",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "peru": {
+      "nome": "Perù",
+      "iso": "PE",
+      "tipo": "stato"
+    },
+    "philippinas": {
+      "nome": "Filippine",
+      "iso": "PH",
+      "tipo": "stato"
+    },
+    "pitcairn": {
+      "nome": "Isole Pitcairn",
+      "iso": "PN",
+      "tipo": "territorio"
+    },
+    "poland": {
+      "nome": "Polonia",
+      "iso": "PL",
+      "tipo": "stato"
+    },
+    "polinesia": {
+      "nome": "Polinesia Francese",
+      "iso": "PF",
+      "tipo": "territorio"
+    },
+    "portugal": {
+      "nome": "Portogallo",
+      "iso": "PT",
+      "tipo": "stato"
+    },
+    "primorsky": {
+      "nome": "Primorje",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "puerto rico": {
+      "nome": "Porto Rico",
+      "iso": "PR",
+      "tipo": "territorio"
+    },
+    "qatar": {
+      "nome": "Qatar",
+      "iso": "QA",
+      "tipo": "stato"
+    },
+    "rhode island": {
+      "nome": "Rhode Island",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "romania": {
+      "nome": "Romania",
+      "iso": "RO",
+      "tipo": "stato"
+    },
+    "russia": {
+      "nome": "Russia",
+      "iso": "RU",
+      "tipo": "stato"
+    },
+    "rwanda": {
+      "nome": "Ruanda",
+      "iso": "RW",
+      "tipo": "stato"
+    },
+    "saint helena": {
+      "nome": "Sant'Elena",
+      "iso": "SH",
+      "tipo": "territorio"
+    },
+    "saint kitts and nevis": {
+      "nome": "Saint Kitts e Nevis",
+      "iso": "KN",
+      "tipo": "stato"
+    },
+    "saint lucia": {
+      "nome": "Santa Lucia",
+      "iso": "LC",
+      "tipo": "stato"
+    },
+    "saint maarten": {
+      "nome": "Sint Maarten",
+      "iso": "SX",
+      "tipo": "territorio"
+    },
+    "saint vincent and grenadines": {
+      "nome": "Saint Vincent e Grenadine",
+      "iso": "VC",
+      "tipo": "stato"
+    },
+    "sakha yakutia": {
+      "nome": "Jacuzia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "sakhalin": {
+      "nome": "Sachalin",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "samoa": {
+      "nome": "Samoa",
+      "iso": "WS",
+      "tipo": "stato"
+    },
+    "san marino": {
+      "nome": "San Marino",
+      "iso": "SM",
+      "tipo": "stato"
+    },
+    "sao tomè e principe": {
+      "nome": "São Tomé e Príncipe",
+      "iso": "ST",
+      "tipo": "stato"
+    },
+    "sardinia": {
+      "nome": "Sardegna",
+      "iso": null,
+      "tipo": "regione"
+    },
+    "saudi arabia": {
+      "nome": "Arabia Saudita",
+      "iso": "SA",
+      "tipo": "stato"
+    },
+    "scotland": {
+      "nome": "Scozia",
+      "iso": "GB-SCT",
+      "tipo": "nazione costitutiva"
+    },
+    "senegal": {
+      "nome": "Senegal",
+      "iso": "SN",
+      "tipo": "stato"
+    },
+    "serbia": {
+      "nome": "Serbia",
+      "iso": "RS",
+      "tipo": "stato"
+    },
+    "seychelles": {
+      "nome": "Seychelles",
+      "iso": "SC",
+      "tipo": "stato"
+    },
+    "sierra leone": {
+      "nome": "Sierra Leone",
+      "iso": "SL",
+      "tipo": "stato"
+    },
+    "singapore": {
+      "nome": "Singapore",
+      "iso": "SG",
+      "tipo": "stato"
+    },
+    "slovak republic": {
+      "nome": "Slovacchia",
+      "iso": "SK",
+      "tipo": "stato"
+    },
+    "slovenia": {
+      "nome": "Slovenia",
+      "iso": "SI",
+      "tipo": "stato"
+    },
+    "solomon islands": {
+      "nome": "Isole Salomone",
+      "iso": "SB",
+      "tipo": "stato"
+    },
+    "somalia": {
+      "nome": "Somalia",
+      "iso": "SO",
+      "tipo": "stato"
+    },
+    "somaliland": {
+      "nome": "Somaliland",
+      "iso": null,
+      "tipo": "stato non riconosciuto"
+    },
+    "south africa": {
+      "nome": "Sudafrica",
+      "iso": "ZA",
+      "tipo": "stato"
+    },
+    "south carolina": {
+      "nome": "Carolina del Sud",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "south dakota": {
+      "nome": "Dakota del Sud",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "south georgia and south sandwich islands": {
+      "nome": "Georgia del Sud e Sandwich Australi",
+      "iso": "GS",
+      "tipo": "territorio"
+    },
+    "south korea": {
+      "nome": "Corea del Sud",
+      "iso": "KR",
+      "tipo": "stato"
+    },
+    "south sudan": {
+      "nome": "Sudan del Sud",
+      "iso": "SS",
+      "tipo": "stato"
+    },
+    "spain": {
+      "nome": "Spagna",
+      "iso": "ES",
+      "tipo": "stato"
+    },
+    "sri lanka": {
+      "nome": "Sri Lanka",
+      "iso": "LK",
+      "tipo": "stato"
+    },
+    "sudan": {
+      "nome": "Sudan",
+      "iso": "SD",
+      "tipo": "stato"
+    },
+    "suriname": {
+      "nome": "Suriname",
+      "iso": "SR",
+      "tipo": "stato"
+    },
+    "swatziland": {
+      "nome": "Eswatini (Swaziland)",
+      "iso": "SZ",
+      "tipo": "stato"
+    },
+    "sweden": {
+      "nome": "Svezia",
+      "iso": "SE",
+      "tipo": "stato"
+    },
+    "switzerland": {
+      "nome": "Svizzera",
+      "iso": "CH",
+      "tipo": "stato"
+    },
+    "syria": {
+      "nome": "Siria",
+      "iso": "SY",
+      "tipo": "stato"
+    },
+    "taiwan": {
+      "nome": "Taiwan",
+      "iso": "TW",
+      "tipo": "stato"
+    },
+    "tajikistan": {
+      "nome": "Tagikistan",
+      "iso": "TJ",
+      "tipo": "stato"
+    },
+    "tanzania": {
+      "nome": "Tanzania",
+      "iso": "TZ",
+      "tipo": "stato"
+    },
+    "tatarstan": {
+      "nome": "Tatarstan",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "tennessee": {
+      "nome": "Tennessee",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "texas": {
+      "nome": "Texas",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "thailand": {
+      "nome": "Thailandia",
+      "iso": "TH",
+      "tipo": "stato"
+    },
+    "tibet": {
+      "nome": "Tibet",
+      "iso": null,
+      "tipo": "regione"
+    },
+    "togo": {
+      "nome": "Togo",
+      "iso": "TG",
+      "tipo": "stato"
+    },
+    "tokelau": {
+      "nome": "Tokelau",
+      "iso": "TK",
+      "tipo": "territorio"
+    },
+    "tomsk": {
+      "nome": "Tomsk",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "tonga": {
+      "nome": "Tonga",
+      "iso": "TO",
+      "tipo": "stato"
+    },
+    "transnistria": {
+      "nome": "Transnistria",
+      "iso": null,
+      "tipo": "stato non riconosciuto"
+    },
+    "trinidad and tobago": {
+      "nome": "Trinidad e Tobago",
+      "iso": "TT",
+      "tipo": "stato"
+    },
+    "tristan da cunha": {
+      "nome": "Tristan da Cunha",
+      "iso": "TA",
+      "tipo": "territorio"
+    },
+    "tunisia": {
+      "nome": "Tunisia",
+      "iso": "TN",
+      "tipo": "stato"
+    },
+    "turkey": {
+      "nome": "Turchia",
+      "iso": "TR",
+      "tipo": "stato"
+    },
+    "turkmenistan": {
+      "nome": "Turkmenistan",
+      "iso": "TM",
+      "tipo": "stato"
+    },
+    "turks and caicos": {
+      "nome": "Isole Turks e Caicos",
+      "iso": "TC",
+      "tipo": "territorio"
+    },
+    "tuva": {
+      "nome": "Tuva",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "tuvalu": {
+      "nome": "Tuvalu",
+      "iso": "TV",
+      "tipo": "stato"
+    },
+    "udmurtia": {
+      "nome": "Udmurtia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "uganda": {
+      "nome": "Uganda",
+      "iso": "UG",
+      "tipo": "stato"
+    },
+    "ukraine": {
+      "nome": "Ucraina",
+      "iso": "UA",
+      "tipo": "stato"
+    },
+    "united arab emirates": {
+      "nome": "Emirati Arabi Uniti",
+      "iso": "AE",
+      "tipo": "stato"
+    },
+    "united kingdom": {
+      "nome": "Regno Unito",
+      "iso": "GB",
+      "tipo": "stato"
+    },
+    "united states": {
+      "nome": "Stati Uniti",
+      "iso": "US",
+      "tipo": "stato"
+    },
+    "uruguay": {
+      "nome": "Uruguay",
+      "iso": "UY",
+      "tipo": "stato"
+    },
+    "utah": {
+      "nome": "Utah",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "uzbekistan": {
+      "nome": "Uzbekistan",
+      "iso": "UZ",
+      "tipo": "stato"
+    },
+    "vanuatu": {
+      "nome": "Vanuatu",
+      "iso": "VU",
+      "tipo": "stato"
+    },
+    "vatican city": {
+      "nome": "Città del Vaticano",
+      "iso": "VA",
+      "tipo": "stato"
+    },
+    "venezuela": {
+      "nome": "Venezuela",
+      "iso": "VE",
+      "tipo": "stato"
+    },
+    "vermont": {
+      "nome": "Vermont",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "vietnam": {
+      "nome": "Vietnam",
+      "iso": "VN",
+      "tipo": "stato"
+    },
+    "virgin islands": {
+      "nome": "Isole Vergini Britanniche",
+      "iso": "VG",
+      "tipo": "territorio"
+    },
+    "virginia": {
+      "nome": "Virginia",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "wales": {
+      "nome": "Galles",
+      "iso": "GB-WLS",
+      "tipo": "nazione costitutiva"
+    },
+    "washington": {
+      "nome": "Washington",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "west virginia": {
+      "nome": "Virginia Occidentale",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "western sahara": {
+      "nome": "Sahara Occidentale",
+      "iso": "EH",
+      "tipo": "territorio conteso"
+    },
+    "wisconsin": {
+      "nome": "Wisconsin",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "wyoming": {
+      "nome": "Wyoming",
+      "iso": null,
+      "tipo": "stato USA"
+    },
+    "yamalia": {
+      "nome": "Jamalia",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "yaroslavl": {
+      "nome": "Jaroslavl'",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "yemen": {
+      "nome": "Yemen",
+      "iso": "YE",
+      "tipo": "stato"
+    },
+    "yugra": {
+      "nome": "Jugra",
+      "iso": null,
+      "tipo": "soggetto federale russo"
+    },
+    "zambia": {
+      "nome": "Zambia",
+      "iso": "ZM",
+      "tipo": "stato"
+    },
+    "zimbabwe": {
+      "nome": "Zimbabwe",
+      "iso": "ZW",
+      "tipo": "stato"
+    }
+  }
+}

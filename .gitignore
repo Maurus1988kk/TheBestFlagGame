@@ -1,0 +1,17 @@
+# Eseguibile e file temporanei di build: si rigenerano con build.bat
+dist/
+build/
+*.spec
+
+# Cache di Python e dei test
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Ambienti virtuali (build.bat usa %LOCALAPPDATA%\FlagGame-build, ma per sicurezza)
+.venv/
+venv/
+
+# File di sistema
+Thumbs.db
+desktop.ini

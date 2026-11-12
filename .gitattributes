@@ -1,0 +1,3 @@
+# Testo con fine riga LF (come i file attuali); i .bat restano CRLF (cmd.exe li vuole cosi')
+* text=auto eol=lf
+*.bat text eol=crlf
