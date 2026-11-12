@@ -233,6 +233,12 @@ def _tracciato_icona(nome: str) -> tuple[QPainterPath, bool]:
         p.lineTo(12, 16)
         p.moveTo(12, 8)
         p.lineTo(12, 8.1)
+    elif nome == "grafico":
+        p.moveTo(4, 20)
+        p.lineTo(20, 20)
+        for x, cima in ((7, 13), (12, 6), (17, 10)):
+            p.moveTo(x, 17)
+            p.lineTo(x, cima)
     elif nome == "bandiera":
         p.moveTo(6, 21)
         p.lineTo(6, 4)

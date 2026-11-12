@@ -42,6 +42,16 @@ def test_georgia_stato_e_georgia_usa_sono_distinte(catalogo):
     assert "georgia" not in catalogo.livelli["nerd"].percorsi
 
 
+def test_punti_dei_livelli(config, tmp_path):
+    assert [(l.id, l.punti) for l in config.livelli] == [
+        ("facile", 100), ("intermedio", 150), ("difficile", 200), ("nerd", 300)]
+    (tmp_path / "livelli.json").write_text(json.dumps({"livelli": [
+        {"id": "a", "cartella": "a"}, {"id": "b", "cartella": "b", "punti": -5},
+        {"id": "c", "cartella": "c", "punti": "tanti"}, {"id": "d", "cartella": "d", "punti": 250}]}),
+        encoding="utf-8")
+    assert [l.punti for l in carica_configurazione(tmp_path).livelli] == [100, 100, 100, 250]
+
+
 def test_file_reali_tutti_leggibili(catalogo):
     illeggibili = [a.percorso for a in catalogo.anomalie if a.tipo == "illeggibile"]
     assert illeggibili == []

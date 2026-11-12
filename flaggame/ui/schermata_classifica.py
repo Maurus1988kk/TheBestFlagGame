@@ -177,9 +177,14 @@ class SchermataClassifica(QWidget):
         self.vuoto = VuotoClassifica()
         self.pagine.addWidget(self.vuoto)
         lc.addWidget(self.pagine, 1)
+        piede = QHBoxLayout()
+        piede.setSpacing(16)
         self.lbl_posizione = etichetta("", "info")
         self.lbl_posizione.hide()
-        lc.addWidget(self.lbl_posizione, 0, Qt.AlignmentFlag.AlignLeft)
+        piede.addWidget(self.lbl_posizione, 0, Qt.AlignmentFlag.AlignVCenter)
+        self.lbl_spiegazione = etichetta("", "terziario", a_capo=True)
+        piede.addWidget(self.lbl_spiegazione, 1, Qt.AlignmentFlag.AlignVCenter)
+        lc.addLayout(piede)
         radice.addWidget(card, 1)
 
         self.seg_modalita.cambiato.connect(lambda *_: self.aggiorna())
@@ -200,6 +205,9 @@ class SchermataClassifica(QWidget):
                 combo.addItem(nome, chiave)
             combo.addItem(tutte, TUTTE)
             combo.blockSignals(False)
+        punti = ", ".join(testi.CLASSIFICA_PUNTI_LIVELLO.format(punti=self.classifica.punti_risposta(k), livello=n)
+                          for k, n in livelli)
+        self.lbl_spiegazione.setText(testi.CLASSIFICA_SPIEGAZIONE_PUNTI.format(livelli=punti))
 
     def mostra(self, modalita: str | None, livello: str | None, area: str | None,
                evidenzia: str | None = None) -> None:
@@ -246,7 +254,7 @@ class SchermataClassifica(QWidget):
             return
         self.pagine.setCurrentWidget(self.tabella)
 
-        colonne = ["pos", "nome", "percentuale", "tempo", "data"]
+        colonne = ["pos", "nome", "punti", "percentuale", "tempo", "data"]
         if filtri["modalita"] is None:
             colonne.append("modalita")
         if filtri["livello"] is None:
@@ -273,6 +281,7 @@ class SchermataClassifica(QWidget):
             valori = {
                 "pos": "" if pos <= 3 else str(pos),
                 "nome": r.nome,
+                "punti": str(self.classifica.punti(r)),
                 "percentuale": f"{round(r.percentuale)}%   ({r.giuste}/{r.totale})",
                 "tempo": formatta_tempo(r.tempo),
                 "data": self._data(r.data),
@@ -287,8 +296,8 @@ class SchermataClassifica(QWidget):
                 item.setTextAlignment(allinea)
                 if chiave == "pos" and pos <= 3:
                     item.setIcon(icona_medaglia(pos, dpr))
-                if chiave in ("nome", "percentuale"):
-                    f = font(15, GRASSETTO if chiave == "percentuale" else SEMIBOLD)
+                if chiave in ("nome", "punti"):
+                    f = font(15, GRASSETTO if chiave == "punti" else SEMIBOLD)
                     item.setFont(f)
                 else:
                     item.setForeground(tema().c("testo_secondario"))

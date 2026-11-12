@@ -181,6 +181,6 @@ numero di avvisi e, passando il mouse, l'elenco dei file problematici.
 
 | File | Contenuto |
 |---|---|
-| `livelli.json` | livelli in ordine, cartella di ciascuno, strategia dei distrattori (`area` o `gruppo`) |
+| `livelli.json` | livelli in ordine, cartella di ciascuno, strategia dei distrattori (`area` o `gruppo`), punti per risposta giusta |
 | `nomi.json` | nome italiano, codice ISO e tipo di ogni bandiera; alias; `ritaglia_sfondo` per il Nepal |
 | `continenti.json` | elenco dei continenti, corrispondenza con le sottocartelle di `theworld`, mappa bandiera → continente |

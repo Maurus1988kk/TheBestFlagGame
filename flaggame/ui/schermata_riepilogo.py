@@ -152,6 +152,9 @@ class SchermataRiepilogo(QWidget):
         stat.addWidget(etichetta(testi.RIEPILOGO_TEMPO_MEDIO, "secondario"), 1, 0)
         self.lbl_medio = etichetta("", "forte")
         stat.addWidget(self.lbl_medio, 1, 1, Qt.AlignmentFlag.AlignRight)
+        stat.addWidget(etichetta(testi.RIEPILOGO_PUNTI, "secondario"), 2, 0)
+        self.lbl_punti = etichetta("", "forte")
+        stat.addWidget(self.lbl_punti, 2, 1, Qt.AlignmentFlag.AlignRight)
         ls.addLayout(stat)
         ls.addSpacing(10)
         ls.addWidget(separatore())
@@ -203,7 +206,7 @@ class SchermataRiepilogo(QWidget):
     # ------------------------------------------------------------- dati
 
     def mostra(self, partita: Partita, nome_modalita: str, nome_livello: str, nome_area: str,
-               ultimo_nome: str) -> None:
+               ultimo_nome: str, punti: int) -> None:
         self.partita = partita
         self.chip_modalita.setText(nome_modalita)
         self.chip_livello.setText(nome_livello)
@@ -215,6 +218,7 @@ class SchermataRiepilogo(QWidget):
         self.lbl_giuste.setText(modello.format(g=partita.giuste, t=partita.totale))
         self.lbl_tempo.setText(formatta_tempo(partita.tempo()))
         self.lbl_medio.setText(testi.RIEPILOGO_SECONDI.format(s=partita.tempo() / partita.totale))
+        self.lbl_punti.setText(str(punti))
 
         self.campo_nome.setEnabled(True)
         self.campo_nome.setText(ultimo_nome)

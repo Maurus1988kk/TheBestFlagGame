@@ -49,6 +49,7 @@ HOME_SEZIONE_AREA = "Area"
 HOME_GIOCA = "Gioca"
 HOME_CLASSIFICA = "Classifica"
 HOME_IMPOSTAZIONI = "Impostazioni"
+HOME_STATISTICHE = "Statistiche"
 HOME_INFO_DISPONIBILI = "{n} bandiere disponibili · {d} domande"
 HOME_AVVISO_POCHE = "Solo {n} bandiere disponibili: la partita avrà {n} domande"
 HOME_AVVISO_UNA = "Solo 1 bandiera disponibile: la partita avrà 1 domanda"
@@ -78,6 +79,7 @@ RIEPILOGO_GIUSTE = "{g} risposte giuste su {t}"
 RIEPILOGO_GIUSTE_UNA = "{g} risposta giusta su {t}"
 RIEPILOGO_TEMPO = "Tempo totale"
 RIEPILOGO_TEMPO_MEDIO = "Tempo medio"
+RIEPILOGO_PUNTI = "Punti"
 RIEPILOGO_SECONDI = "{s:.1f} s"
 RIEPILOGO_LE_TUE_RISPOSTE = "Le tue risposte"
 RIEPILOGO_RISPOSTA_GIUSTA = "Risposta giusta"
@@ -98,13 +100,14 @@ RIEPILOGO_GIUDIZI = [
 
 # --- Classifica --------------------------------------------------------------
 CLASSIFICA_TITOLO = "Classifica"
-CLASSIFICA_SOTTOTITOLO = "I 10 migliori risultati per modalità, livello e area"
+CLASSIFICA_SOTTOTITOLO = "I 10 migliori punteggi per modalità, livello e area"
 CLASSIFICA_TUTTE_MODALITA = "Tutte"
 CLASSIFICA_TUTTI_LIVELLI = "Tutti i livelli"
 CLASSIFICA_TUTTE_AREE = "Tutte le aree"
 CLASSIFICA_COLONNE = {
     "pos": "#",
     "nome": "Nome",
+    "punti": "Punti",
     "percentuale": "Risultato",
     "tempo": "Tempo",
     "data": "Data",
@@ -116,6 +119,41 @@ CLASSIFICA_VUOTA = "Ancora nessun risultato per questa combinazione."
 CLASSIFICA_VUOTA_SUGGERIMENTO = "Gioca una partita e salva il tuo punteggio per entrare in classifica."
 CLASSIFICA_FORMATO_DATA = "%d/%m/%Y %H:%M"
 CLASSIFICA_TUO_RISULTATO = "Il tuo risultato è in posizione {pos}"
+CLASSIFICA_SPIEGAZIONE_PUNTI = ("Punti per ogni risposta giusta: {livelli}, "
+                                "più fino al 10% se rispondi in fretta.")
+CLASSIFICA_PUNTI_LIVELLO = "{punti} in {livello}"
+
+# --- Statistiche -------------------------------------------------------------
+STAT_TITOLO = "Statistiche"
+STAT_SOTTOTITOLO = "I tuoi progressi, partita dopo partita"
+STAT_GIOCATORE = "Giocatore"
+STAT_PARTITE = "Partite giocate"
+STAT_PARTITE_SOTTO = "salvate in classifica"
+STAT_GIUSTE = "Risposte giuste"
+STAT_GIUSTE_SOTTO = "{g} su {t}"
+STAT_TEMPO = "Tempo medio"
+STAT_TEMPO_SOTTO = "per risposta"
+STAT_TEMPO_VALORE = "{s:.1f} s"
+STAT_MIGLIORE = "Miglior punteggio"
+STAT_MIGLIORE_SOTTO = "{livello} · {modalita}"
+STAT_PER_LIVELLO = "Per livello"
+STAT_PER_CONTINENTE = "Per continente"
+STAT_ANDAMENTO = "Andamento"
+STAT_ANDAMENTO_SOTTO = "Risposte giuste nelle ultime {n} partite"
+STAT_ANDAMENTO_UNA = "Risposte giuste nella prima partita: gioca ancora per vedere l'andamento"
+STAT_DA_RIPASSARE = "Bandiere da ripassare"
+STAT_SBAGLIATA = "Sbagliata {n} volte su {v}"
+STAT_SBAGLIATA_UNA = "Sbagliata 1 volta su {v}"
+STAT_CONFUSA = "Scambiata con: {nome}"
+STAT_NON_GIOCATO = "non giocato"
+STAT_QUOTA_TOOLTIP = "{nome}: {g} risposte giuste su {t} ({p}%)"
+STAT_QUOTA_TOOLTIP_VUOTA = "{nome}: nessuna partita"
+STAT_PUNTO_TOOLTIP = "{data}\n{modalita} · {livello} · {area}\n{g} giuste su {t} ({p}%) · {punti} punti"
+STAT_SENZA_DETTAGLIO = ("Comparirà dalle prossime partite: le singole risposte "
+                        "si salvano da questa versione in poi.")
+STAT_NESSUN_ERRORE = "Nessun errore finora: complimenti!"
+STAT_VUOTA = "Ancora nessuna statistica."
+STAT_VUOTA_SUGGERIMENTO = "Gioca una partita e salvala con il tuo nome: qui vedrai i tuoi progressi."
 
 # --- Impostazioni ------------------------------------------------------------
 IMPOSTAZIONI_TITOLO = "Impostazioni"
@@ -141,9 +179,10 @@ IMP_STORICO = "Storico delle domande"
 IMP_AZZERA_STORICO = "Azzera storico"
 IMP_AZZERA_STORICO_DESCR = "Il gioco ricorda le ultime bandiere uscite per non ripeterle: qui puoi dimenticarle."
 IMP_STORICO_AZZERATO = "Storico azzerato"
-IMP_SVUOTA_CLASSIFICA = "Cancella classifica"
-IMP_SVUOTA_TITOLO = "Cancellare tutta la classifica?"
-IMP_SVUOTA_TESTO = "Tutti i risultati salvati verranno eliminati. L'operazione non si può annullare."
+IMP_SVUOTA_CLASSIFICA = "Cancella classifica e statistiche"
+IMP_SVUOTA_TITOLO = "Cancellare classifica e statistiche?"
+IMP_SVUOTA_TESTO = ("Tutti i risultati salvati, e con loro le statistiche, verranno eliminati. "
+                    "L'operazione non si può annullare.")
 IMP_SVUOTA_SI = "Cancella"
 IMP_ANNULLA = "Annulla"
 IMP_INFO_VERSIONE = "{app} · versione {v}"

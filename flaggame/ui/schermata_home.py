@@ -56,6 +56,7 @@ class SchermataHome(QWidget):
 
     gioca = Signal(str, str, str)       # modalità, livello, area
     apri_classifica = Signal()
+    apri_statistiche = Signal()
     apri_impostazioni = Signal()
     selezione_cambiata = Signal(str, str, str)
 
@@ -88,9 +89,12 @@ class SchermataHome(QWidget):
         testa.addStretch(1)
         self.btn_classifica = pulsante(testi.HOME_CLASSIFICA)
         imposta_icona(self.btn_classifica, "trofeo", "testo_secondario")
+        self.btn_statistiche = pulsante(testi.HOME_STATISTICHE)
+        imposta_icona(self.btn_statistiche, "grafico", "testo_secondario")
         self.btn_impostazioni = pulsante(testi.HOME_IMPOSTAZIONI)
         imposta_icona(self.btn_impostazioni, "ingranaggio", "testo_secondario")
         testa.addWidget(self.btn_classifica)
+        testa.addWidget(self.btn_statistiche)
         testa.addWidget(self.btn_impostazioni)
         lay.addLayout(testa)
         lay.addSpacing(26)
@@ -168,6 +172,7 @@ class SchermataHome(QWidget):
         self.combo_area.currentIndexChanged.connect(lambda *_: self._aggiorna())
         self.btn_gioca.clicked.connect(self._gioca)
         self.btn_classifica.clicked.connect(self.apri_classifica)
+        self.btn_statistiche.clicked.connect(self.apri_statistiche)
         self.btn_impostazioni.clicked.connect(self.apri_impostazioni)
 
     # -------------------------------------------------------------- dati

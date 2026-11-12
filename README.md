@@ -15,7 +15,8 @@ vecchio programma in Visual C#.
   dopo ogni risposta, quindi misura solo il tempo di ragionamento.
 * Tasti rapidi: **1–4** per rispondere, **Invio/Spazio** (o un clic) per passare subito alla
   domanda successiva, **Esc** per abbandonare (con conferma; la partita abbandonata non va in classifica).
-* Alla fine: percentuale, tempo, elenco delle risposte e salvataggio in classifica con il tuo nome.
+* Alla fine: percentuale, tempo, punti, elenco delle risposte e salvataggio in classifica con il tuo nome.
+* **Statistiche** (pulsante nella home): i tuoi progressi partita dopo partita, vedi sotto.
 
 ![Partita](docs/gioco.png)
 
@@ -72,7 +73,7 @@ Tutto in `%APPDATA%\FlagGame\` (pulsante **Apri cartella** nelle Impostazioni):
 
 | File | Contenuto |
 |---|---|
-| `classifica.json` | tutti i risultati salvati |
+| `classifica.json` | tutti i risultati salvati, con le singole risposte (da cui nascono le statistiche) |
 | `storico.json` | ultime 60 risposte giuste uscite per ogni combinazione modalità/livello/area |
 | `impostazioni.json` | tema, suoni, avanzamento automatico, ultimo nome, cartella delle bandiere, ultima scelta, finestra |
 | `suoni\*.wav` | effetti sonori, generati al primo uso con il modulo `wave` |
@@ -82,9 +83,39 @@ La scrittura è **atomica**: i dati vanno prima in un file temporaneo nella stes
 `os.replace` lo sostituisce al file vero, così un crash a metà salvataggio non corrompe la
 classifica. Un file illeggibile non viene cancellato ma rinominato in `*.danneggiato-<data>`.
 
-**Classifica**: separata per modalità, livello e area (con viste «Tutte»), ordinata per
-percentuale decrescente e poi tempo crescente; mostra la top 10 e tiene evidenziato il risultato
-appena salvato (anche se è fuori dalla top 10).
+## Classifica e punti
+
+La classifica è separata per modalità, livello e area (con viste «Tutte»), mostra la top 10 e
+tiene evidenziato il risultato appena salvato (anche se è fuori dalla top 10). È ordinata per
+**punti** (a parità: percentuale, poi tempo):
+
+* ogni risposta giusta vale i `"punti"` del livello in `dati\livelli.json`: **Facile 100,
+  Intermedio 150, Difficile 200, Nerd 300**;
+* la velocità dà un **bonus fino al 10%**: pieno con una media di 2 secondi a domanda o meno,
+  nullo da 12 secondi in su, proporzionale nel mezzo.
+
+Il bonus è volutamente piccolo: con 10 domande una risposta giusta in più vale sempre più di
+qualunque bonus. Quindi, dentro la stessa combinazione, l'ordine è identico a «percentuale, poi
+tempo»; nelle viste «Tutte» invece un 70% in Nerd (2100 punti) batte un 100% in Facile (al massimo
+1100) e una partita breve (es. 3 domande in Nerd + America del Sud) non supera più una da 10 solo
+perché ha la stessa percentuale. I punti si calcolano al momento, quindi valgono anche per i
+risultati salvati prima che esistessero.
+
+## Statistiche
+
+![Statistiche](docs/statistiche.png)
+
+La schermata **Statistiche** mostra, per il giocatore scelto (all'inizio l'ultimo nome usato):
+partite giocate, percentuale di risposte giuste, tempo medio per risposta e miglior punteggio;
+l'andamento delle ultime 20 partite; la percentuale per livello e per continente; le **bandiere da
+ripassare**, cioè quelle sbagliate più spesso, con la risposta che hai scelto al loro posto.
+
+Non c'è un file a parte: le statistiche si calcolano dai risultati della classifica, che da
+questa versione conservano anche le singole risposte. Contano quindi solo le partite **salvate con
+un nome**; i nomi si confrontano senza badare a maiuscole e spazi. I risultati salvati prima di
+questa versione entrano nel riepilogo, nei livelli e nell'andamento, ma non nei continenti e nelle
+bandiere da ripassare (non hanno il dettaglio delle risposte). **Cancella classifica e
+statistiche** (Impostazioni) le azzera insieme.
 
 ## Aggiungere bandiere
 
@@ -115,8 +146,10 @@ I dettagli sui file attuali sono in [STRUTTURA_DATI.md](STRUTTURA_DATI.md).
 2. Aggiungi una voce in `dati\livelli.json`:
 
    ```json
-   {"id": "esperto", "nome": "Esperto", "cartella": "expert", "distrattori": "gruppo"}
+   {"id": "esperto", "nome": "Esperto", "cartella": "expert", "distrattori": "gruppo", "punti": 400}
    ```
+
+   `"punti"` sono i punti in classifica per ogni risposta giusta (se manca, 100).
 
 3. Facoltativo: nome e descrizione tradotti in `flaggame\testi.py` (`LIVELLI`, `DESCRIZIONE_LIVELLI`).
 
@@ -176,7 +209,8 @@ flaggame/
   dati.py                   scansione cartelle, nomi, continenti, gruppi (nessun file modificato)
   generatore.py             creazione delle domande e delle opzioni
   partita.py                stato della partita e cronometro con pausa
-  classifica.py             classifica e ordinamento
+  classifica.py             classifica, punti e ordinamento
+  statistiche.py            statistiche personali calcolate dalla classifica
   persistenza.py            JSON atomico, impostazioni, storico anti-ripetizione
   suoni.py                  effetti sonori generati con wave
   percorsi.py               cartelle del programma e dei dati utente
@@ -184,7 +218,8 @@ flaggame/
   ui/                       interfaccia Qt, una classe per schermata
     finestra.py             finestra principale e navigazione
     schermata_home.py, schermata_gioco.py, schermata_riepilogo.py,
-    schermata_classifica.py, schermata_impostazioni.py, schermata_cartella.py
+    schermata_classifica.py, schermata_statistiche.py, schermata_impostazioni.py,
+    schermata_cartella.py
     componenti.py           widget disegnati a mano (card, bandiere, segmenti, interruttori…)
     grafica.py              logo, icone e illustrazioni vettoriali
     tema.py                 palette chiara/scura e foglio di stile QSS
@@ -195,8 +230,8 @@ tests/                      test pytest
 tools/genera_icona.py       rigenera assets/icona.ico dal logo
 ```
 
-La logica (`dati`, `generatore`, `partita`, `classifica`, `persistenza`, `suoni`) non importa
-nulla di Qt: un test lo verifica.
+La logica (`dati`, `generatore`, `partita`, `classifica`, `statistiche`, `persistenza`, `suoni`)
+non importa nulla di Qt: un test lo verifica.
 
 ## Test
 
@@ -208,7 +243,9 @@ Controllano tra l'altro: 1000 partite simulate per ognuna delle 56 combinazioni 
 × area (numero di domande, nessuna risposta ripetuta, nessuna opzione duplicata, risposta giusta
 sempre tra le opzioni); distrattori Nerd dallo stesso gruppo (100% quando il gruppo ha almeno 4
 bandiere); partite consecutive diverse; effetto dello storico; ordinamento, salvataggio,
-ricaricamento e scrittura atomica della classifica; che la scansione non modifichi i file delle
+ricaricamento e scrittura atomica della classifica; punti (una risposta giusta in più batte
+sempre il bonus velocità, stesso ordine di prima dentro una combinazione, lettura dei risultati
+vecchi); statistiche per giocatore, livello, continente e bandiere da ripassare; che la scansione non modifichi i file delle
 bandiere; l'apertura di tutte le schermate in tema chiaro e scuro e alla dimensione minima,
 giocando partite vere con tastiera e mouse. Con la variabile `FLAGGAME_SCREENSHOT=<cartella>`
 i test dell'interfaccia salvano uno screenshot di ogni schermata. I test non toccano i dati in

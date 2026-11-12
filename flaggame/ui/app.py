@@ -76,7 +76,10 @@ def verifica() -> int:
             finestra.grab()
             finestra.gioco.abbandona()
             app.processEvents()
-        for schermata in (finestra.schermata_classifica, finestra.schermata_impostazioni, finestra.home):
+        for schermata in (finestra.schermata_classifica, finestra.schermata_statistiche,
+                          finestra.schermata_impostazioni, finestra.home):
+            if schermata is finestra.schermata_statistiche:
+                finestra.schermata_statistiche.mostra()
             finestra.stack.mostra(schermata, anima=False)
             finestra.grab()
         finestra.close()

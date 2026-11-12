@@ -7,7 +7,7 @@ from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import QFileDialog, QMainWindow, QVBoxLayout, QWidget
 
 from .. import NOME_APP, percorsi, testi
-from ..classifica import Classifica, Risultato
+from ..classifica import Classifica, RispostaSalvata, Risultato
 from ..dati import (AREA_MONDO, Catalogo, ErroreDati, carica_catalogo, carica_configurazione,
                     riconosci_radice, trova_radice)
 from ..generatore import Generatore
@@ -23,6 +23,7 @@ from .schermata_gioco import SchermataGioco
 from .schermata_home import SchermataHome
 from .schermata_impostazioni import SchermataImpostazioni
 from .schermata_riepilogo import SchermataRiepilogo
+from .schermata_statistiche import SchermataStatistiche
 from .tema import applica_tema
 
 DURATA_DISSOLVENZA = 260
@@ -40,11 +41,12 @@ class FinestraPrincipale(QMainWindow):
         cartella = percorsi.cartella_utente()
         self.cartella_utente = cartella
         self.impostazioni = Impostazioni.carica(cartella / "impostazioni.json")
-        self.classifica = Classifica(cartella / "classifica.json")
+        self.config = carica_configurazione(percorsi.cartella_dati_app())
+        self.classifica = Classifica(cartella / "classifica.json",
+                                     punti_livello={c.id: c.punti for c in self.config.livelli})
         self.storico = Storico(cartella / "storico.json")
         self.suoni = Suoni(cartella / "suoni", self.impostazioni.suoni)
         self.cache = CacheImmagini()
-        self.config = carica_configurazione(percorsi.cartella_dati_app())
         self.catalogo: Catalogo | None = None
         self.generatore: Generatore | None = None
         self.partita: Partita | None = None
@@ -65,10 +67,11 @@ class FinestraPrincipale(QMainWindow):
         self.gioco = SchermataGioco(self.cache, lambda: self.impostazioni.avanzamento_automatico)
         self.riepilogo = SchermataRiepilogo(self.cache)
         self.schermata_classifica = SchermataClassifica(self.classifica)
+        self.schermata_statistiche = SchermataStatistiche(self.classifica, self.cache)
         self.schermata_impostazioni = SchermataImpostazioni()
         self.schermata_cartella = SchermataCartella()
         for s in (self.home, self.gioco, self.riepilogo, self.schermata_classifica,
-                  self.schermata_impostazioni, self.schermata_cartella):
+                  self.schermata_statistiche, self.schermata_impostazioni, self.schermata_cartella):
             self.stack.addWidget(s)
         self._collega()
 
@@ -83,6 +86,7 @@ class FinestraPrincipale(QMainWindow):
     def _collega(self):
         self.home.gioca.connect(self.avvia_partita)
         self.home.apri_classifica.connect(self._classifica_da_home)
+        self.home.apri_statistiche.connect(self.apri_statistiche)
         self.home.apri_impostazioni.connect(self.apri_impostazioni)
         self.home.selezione_cambiata.connect(self._ricorda_selezione)
 
@@ -96,6 +100,7 @@ class FinestraPrincipale(QMainWindow):
 
         self.schermata_classifica.indietro.connect(
             lambda: self.stack.mostra(self._ritorno_classifica or self.home))
+        self.schermata_statistiche.indietro.connect(self.vai_home)
 
         imp = self.schermata_impostazioni
         imp.indietro.connect(self.vai_home)
@@ -151,6 +156,7 @@ class FinestraPrincipale(QMainWindow):
         self.home.configura(self.nomi_livelli(), self.nomi_aree(), self.generatore.info,
                             imp.ultima_modalita, imp.ultimo_livello, imp.ultima_area)
         self.schermata_classifica.configura(self.nomi_livelli(), self.nomi_aree())
+        self.schermata_statistiche.configura(self.nomi_livelli(), self.nomi_aree(), self.catalogo)
         self.stack.mostra(self.home, anima)
         return True
 
@@ -196,11 +202,19 @@ class FinestraPrincipale(QMainWindow):
             self.generatore.registra_uscite(partita.modalita, partita.livello, partita.area,
                                             partita.ids_mostrati())
 
+    @staticmethod
+    def _tempo_salvato(partita: Partita) -> float:
+        """Tempo come viene salvato in classifica (i punti si calcolano da questo)."""
+        return round(partita.tempo(), 2)
+
     def _partita_finita(self, partita: Partita) -> None:
         self._registra_storico(partita)
         self.suoni.suona("fine")
+        punti = self.classifica.punti(Risultato(
+            nome="", giuste=partita.giuste, totale=partita.totale, tempo=self._tempo_salvato(partita),
+            modalita=partita.modalita, livello=partita.livello, area=partita.area))
         self.riepilogo.mostra(partita, testi.MODALITA[partita.modalita], self.nome_livello(partita.livello),
-                              self.nome_area(partita.area), self.impostazioni.ultimo_nome)
+                              self.nome_area(partita.area), self.impostazioni.ultimo_nome, punti)
         self.stack.mostra(self.riepilogo)
 
     def _partita_abbandonata(self, partita: Partita) -> None:
@@ -217,9 +231,11 @@ class FinestraPrincipale(QMainWindow):
         p = self.partita
         if p is None:
             return
+        risposte = tuple(RispostaSalvata(r.domanda.risposta.id, r.opzione_scelta.id, round(r.tempo, 2))
+                         for r in p.risposte)
         risultato = self.classifica.aggiungi(Risultato(
-            nome=nome, giuste=p.giuste, totale=p.totale, tempo=round(p.tempo(), 2),
-            modalita=p.modalita, livello=p.livello, area=p.area))
+            nome=nome, giuste=p.giuste, totale=p.totale, tempo=self._tempo_salvato(p),
+            modalita=p.modalita, livello=p.livello, area=p.area, risposte=risposte))
         self.impostazioni.ultimo_nome = risultato.nome
         self._salva_impostazioni()
         self.riepilogo.segna_salvato()
@@ -237,6 +253,10 @@ class FinestraPrincipale(QMainWindow):
         self.schermata_classifica.mostra(self.home.modalita(), self.home.livello(), self.home.area())
         self._ritorno_classifica = self.home
         self.stack.mostra(self.schermata_classifica)
+
+    def apri_statistiche(self) -> None:
+        self.schermata_statistiche.mostra(self.impostazioni.ultimo_nome)
+        self.stack.mostra(self.schermata_statistiche)
 
     def apri_impostazioni(self) -> None:
         self._aggiorna_impostazioni()

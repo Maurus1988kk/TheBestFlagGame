@@ -133,6 +133,11 @@ def test_tutte_le_schermate(app, eccezioni):
     QTest.qWait(400)
     assert f.stack.currentWidget() is f.riepilogo
     assert not f.riepilogo.btn_salva.isEnabled()
+    # punti del riepilogo = punti in classifica; risposte salvate per le statistiche
+    salvato = f.classifica.tutti()[0]
+    assert f.riepilogo.lbl_punti.text() == str(f.classifica.punti(salvato))
+    assert len(salvato.risposte) == salvato.totale == 10
+    assert sum(r.giusta for r in salvato.risposte) == salvato.giuste
 
     # Guess the Country, livello nerd
     f.avvia_partita("country", "nerd", "mondo")
@@ -175,6 +180,19 @@ def test_tutte_le_schermate(app, eccezioni):
     f.schermata_classifica.mostra(None, None, None)
     QTest.qWait(100)
     salva(f, "11_classifica_tutte")
+    assert "300 in Nerd" in f.schermata_classifica.lbl_spiegazione.text()
+
+    # statistiche del giocatore appena salvato
+    f.home.btn_statistiche.click()
+    QTest.qWait(400)
+    st = f.schermata_statistiche
+    assert f.stack.currentWidget() is st
+    assert st.pagine.currentWidget() is st.pagina_dati
+    assert st.combo_giocatore.currentText() == "Tester"
+    assert st.t_partite.lbl_valore.text() == "1"
+    assert not st.grafico_continenti.isHidden() and st.nota_continenti.isHidden()
+    assert st.griglia_ripasso.count() >= 1          # almeno una risposta sbagliata
+    salva(f, "11b_statistiche")
 
     # tema scuro
     f.apri_impostazioni()
@@ -199,6 +217,11 @@ def test_tutte_le_schermate(app, eccezioni):
     f.riepilogo.btn_salva.click()
     QTest.qWait(450)
     salva(f, "16_classifica_scuro")
+    f.apri_statistiche()
+    QTest.qWait(400)
+    assert f.schermata_statistiche.combo_giocatore.currentText() == "Notte"
+    assert f.schermata_statistiche.combo_giocatore.count() == 2
+    salva(f, "16b_statistiche_scuro")
     f.avvia_partita("country", "intermedio", "oceania")
     QTest.qWait(500)
     salva(f, "17_gioco_country_scuro")
@@ -216,6 +239,13 @@ def test_dimensione_minima(app, eccezioni):
     f = nuova_finestra(1000, 700)
     assert f.width() >= 1000 and f.height() >= 700
     salva(f, "20_min_home")
+    f.apri_statistiche()                              # nessuna partita salvata
+    QTest.qWait(400)
+    assert f.schermata_statistiche.pagine.currentWidget() is f.schermata_statistiche.vuoto
+    assert f.schermata_statistiche.colonna_giocatore.isHidden()
+    salva(f, "25_min_statistiche_vuote")
+    f.vai_home()
+    QTest.qWait(400)
     f.avvia_partita("flag", "intermedio", "mondo")
     QTest.qWait(500)
     salva(f, "21_min_gioco_flag")
@@ -226,6 +256,12 @@ def test_dimensione_minima(app, eccezioni):
     salva(f, "22_min_gioco_country")
     gioca_fino_alla_fine(f)
     salva(f, "23_min_riepilogo")
+    f.riepilogo.campo_nome.setText("Mini")
+    f.riepilogo.btn_salva.click()
+    QTest.qWait(450)
+    f.apri_statistiche()
+    QTest.qWait(400)
+    salva(f, "26_min_statistiche")
     f.apri_impostazioni()
     QTest.qWait(400)
     salva(f, "24_min_impostazioni")

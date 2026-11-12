@@ -4,18 +4,23 @@ from __future__ import annotations
 
 import json
 import os
+import random
 
 import pytest
 
 from flaggame import persistenza
-from flaggame.classifica import Classifica, Risultato, pulisci_nome
+from flaggame.classifica import (Classifica, RispostaSalvata, Risultato, calcola_punti,
+                                 pulisci_nome)
 from flaggame.persistenza import Impostazioni, Storico, leggi_json, scrivi_json_atomico
 
 
+PUNTI = {"facile": 100, "intermedio": 150, "difficile": 200, "nerd": 300}
+
+
 def ris(nome, giuste, tempo, data="2026-01-01T10:00:00", modalita="flag", livello="facile",
-        area="mondo", totale=10):
+        area="mondo", totale=10, risposte=()):
     return Risultato(nome=nome, giuste=giuste, totale=totale, tempo=tempo, modalita=modalita,
-                     livello=livello, area=area, data=data)
+                     livello=livello, area=area, data=data, risposte=tuple(risposte))
 
 
 def test_ordinamento_percentuale_poi_tempo(tmp_path):
@@ -28,12 +33,86 @@ def test_ordinamento_percentuale_poi_tempo(tmp_path):
     assert [r.nome for r in c.filtra()] == ["Perfetto", "Veloce", "Pari", "Lento", "Scarso"]
 
 
-def test_percentuale_con_partite_brevi(tmp_path):
-    c = Classifica(tmp_path / "c.json")
-    c.aggiungi(ris("Breve", 3, 10.0, totale=3))     # 100%
-    c.aggiungi(ris("Lunga", 9, 5.0))               # 90%
-    assert [r.nome for r in c.filtra()] == ["Breve", "Lunga"]
-    assert c.filtra()[0].percentuale == 100
+def test_partite_brevi_non_superano_quelle_lunghe(tmp_path):
+    """Con i punti, 3 su 3 (100%) non vale più di 9 su 10 (90%)."""
+    c = Classifica(tmp_path / "c.json", PUNTI)
+    c.aggiungi(ris("Breve", 3, 10.0, totale=3))     # 100%, 300 punti + bonus
+    c.aggiungi(ris("Lunga", 9, 50.0))              # 90%, 900 punti + bonus
+    assert [r.nome for r in c.filtra()] == ["Lunga", "Breve"]
+    assert c.filtra()[1].percentuale == 100
+
+
+def test_calcolo_punti():
+    assert calcola_punti(10, 10, 200.0, 100) == 1000      # 20 s a domanda: nessun bonus
+    assert calcola_punti(10, 10, 120.0, 100) == 1000      # 12 s a domanda: ancora nessun bonus
+    assert calcola_punti(10, 10, 20.0, 100) == 1100       # 2 s a domanda: bonus pieno (+10%)
+    assert calcola_punti(10, 10, 5.0, 100) == 1100        # più veloce: il bonus non cresce
+    assert calcola_punti(10, 10, 70.0, 100) == 1050       # 7 s a domanda: metà bonus
+    assert calcola_punti(7, 10, 200.0, 300) == 2100
+    assert calcola_punti(0, 10, 5.0, 300) == 0
+    assert calcola_punti(3, 0, 5.0, 300) == 0
+
+
+def test_una_risposta_giusta_in_piu_vale_piu_di_ogni_bonus():
+    for punti in PUNTI.values():
+        for giuste in range(10):
+            velocissimo = calcola_punti(giuste, 10, 0.0, punti)
+            lentissimo = calcola_punti(giuste + 1, 10, 10_000.0, punti)
+            assert velocissimo < lentissimo
+
+
+def test_livelli_diversi_nella_vista_tutte(tmp_path):
+    c = Classifica(tmp_path / "c.json", PUNTI)
+    c.aggiungi(ris("Facile perfetto", 10, 15.0, livello="facile"))   # 1100 punti
+    c.aggiungi(ris("Nerd 70%", 7, 150.0, livello="nerd"))            # 2100 punti
+    c.aggiungi(ris("Difficile 60%", 6, 150.0, livello="difficile"))  # 1200 punti
+    assert [r.nome for r in c.filtra()] == ["Nerd 70%", "Difficile 60%", "Facile perfetto"]
+    assert c.punti(c.filtra()[0]) == 2100
+
+
+def test_livello_sconosciuto_vale_100_punti(tmp_path):
+    c = Classifica(tmp_path / "c.json", PUNTI)
+    assert c.punti_risposta("esperto") == 100
+    assert c.punti(ris("X", 5, 500.0, livello="esperto")) == 500
+
+
+def test_stessa_combinazione_ordine_come_percentuale_poi_tempo(tmp_path):
+    """Dentro una combinazione l'ordine per punti coincide con quello vecchio."""
+    rng = random.Random(7)
+    for livello in PUNTI:
+        c = Classifica(None, PUNTI)
+        for i in range(300):
+            c.aggiungi(ris(f"G{i}", rng.randint(0, 10), round(rng.uniform(5, 200), 2),
+                           data=f"2026-01-01T10:{i // 60:02d}:{i % 60:02d}", livello=livello))
+        vecchio = sorted(c.tutti(), key=lambda r: (-r.percentuale, r.tempo, r.data))
+        assert [r.id for r in c.filtra()] == [r.id for r in vecchio]
+
+
+def test_risposte_salvate_e_ricaricate(tmp_path):
+    percorso = tmp_path / "c.json"
+    risposte = [RispostaSalvata("italy", "italy", 2.5), RispostaSalvata("chad", "romania", 7.25)]
+    salvato = Classifica(percorso, PUNTI).aggiungi(ris("Mauro", 1, 9.75, totale=2, risposte=risposte))
+    ricaricato = Classifica(percorso, PUNTI).tutti()[0]
+    assert ricaricato == salvato
+    assert [r.giusta for r in ricaricato.risposte] == [True, False]
+    assert json.loads(percorso.read_text(encoding="utf-8"))["risultati"][0]["risposte"][1] == {
+        "id": "chad", "scelta": "romania", "tempo": 7.25}
+
+
+def test_risultati_della_versione_precedente(tmp_path):
+    """I risultati senza "risposte" (salvati prima dei punti) si leggono e hanno i punti."""
+    percorso = tmp_path / "c.json"
+    scrivi_json_atomico(percorso, {"versione": 1, "risultati": [
+        {"nome": "Vecchio", "giuste": 8, "totale": 10, "tempo": 60.0, "modalita": "flag",
+         "livello": "nerd", "area": "mondo", "data": "2025-11-09T21:00:00", "id": "abc"},
+        {"nome": "Rotte", "giuste": 1, "totale": 1, "tempo": 3.0, "modalita": "flag",
+         "livello": "facile", "area": "mondo", "id": "def", "risposte": [{"id": "x"}, {"id": "y", "scelta": "y"}]},
+    ]})
+    c = Classifica(percorso, PUNTI)
+    vecchio = c.tutti()[0]
+    assert vecchio.risposte == ()
+    assert c.punti(vecchio) == calcola_punti(8, 10, 60.0, 300)
+    assert [r.id for r in c.tutti()[1].risposte] == ["y"]          # risposta non valida ignorata
 
 
 def test_filtri_e_top(tmp_path):

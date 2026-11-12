@@ -170,6 +170,7 @@ QLabel[ruolo="domanda"] { font-size: 17px; color: $testo_secondario; }
 QLabel[ruolo="stato_nome"] { font-size: 40px; font-weight: 700; color: $testo; }
 QLabel[ruolo="esito_giusto"] { font-size: 16px; font-weight: 700; color: $successo; }
 QLabel[ruolo="esito_sbagliato"] { font-size: 16px; font-weight: 700; color: $errore; }
+QLabel[ruolo="valore_stat"] { font-size: 30px; font-weight: 600; color: $testo; }
 
 QPushButton { border-radius: 10px; padding: 9px 18px; font-size: 14px; font-weight: 600;
               border: 1px solid $bordo; background: $superficie; color: $testo; }

@@ -11,7 +11,8 @@ from flaggame.suoni import MELODIE, Suoni, genera_wav
 from .conftest import RADICE_PROGETTO
 
 MODULI_LOGICA = ["flaggame.dati", "flaggame.generatore", "flaggame.partita", "flaggame.classifica",
-                 "flaggame.persistenza", "flaggame.suoni", "flaggame.percorsi", "flaggame.testi"]
+                 "flaggame.persistenza", "flaggame.suoni", "flaggame.percorsi", "flaggame.testi",
+                 "flaggame.statistiche"]
 
 
 def test_la_logica_non_importa_qt():

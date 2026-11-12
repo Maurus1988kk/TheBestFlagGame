@@ -30,11 +30,12 @@ FILE_DI_SISTEMA = {"thumbs.db", "desktop.ini", ".ds_store"}
 CONTINENTI_PREDEFINITI = ("europa", "asia", "africa", "america_nord", "america_sud", "oceania")
 
 LIVELLI_PREDEFINITI = (
-    {"id": "facile", "nome": "Facile", "cartella": "easy", "distrattori": "area"},
-    {"id": "intermedio", "nome": "Intermedio", "cartella": "intermediate", "distrattori": "area"},
-    {"id": "difficile", "nome": "Difficile", "cartella": "difficult", "distrattori": "area"},
-    {"id": "nerd", "nome": "Nerd", "cartella": "nerd", "distrattori": "gruppo"},
+    {"id": "facile", "nome": "Facile", "cartella": "easy", "distrattori": "area", "punti": 100},
+    {"id": "intermedio", "nome": "Intermedio", "cartella": "intermediate", "distrattori": "area", "punti": 150},
+    {"id": "difficile", "nome": "Difficile", "cartella": "difficult", "distrattori": "area", "punti": 200},
+    {"id": "nerd", "nome": "Nerd", "cartella": "nerd", "distrattori": "gruppo", "punti": 300},
 )
+PUNTI_PREDEFINITI = 100  # punti per risposta giusta di un livello senza "punti" in livelli.json
 
 
 # --------------------------------------------------------------------------- #
@@ -49,6 +50,7 @@ class ConfigLivello:
     nome: str
     cartella: str
     distrattori: str = "area"  # "area" oppure "gruppo"
+    punti: int = PUNTI_PREDEFINITI  # punti per risposta giusta (classifica)
 
 
 @dataclass(frozen=True)
@@ -170,6 +172,13 @@ def _leggi_json(percorso: Path) -> dict:
         return {}
 
 
+def _punti_validi(valore) -> int:
+    """Punti per risposta letti da livelli.json (numero intero positivo)."""
+    if isinstance(valore, (int, float)) and not isinstance(valore, bool) and valore > 0:
+        return int(valore)
+    return PUNTI_PREDEFINITI
+
+
 def carica_configurazione(cartella_dati: Path) -> Configurazione:
     """Legge livelli.json, nomi.json e continenti.json (con valori predefiniti)."""
     livelli_json = _leggi_json(cartella_dati / "livelli.json")
@@ -184,6 +193,7 @@ def carica_configurazione(cartella_dati: Path) -> Configurazione:
                 nome=str(voce.get("nome", voce["id"])),
                 cartella=str(voce["cartella"]),
                 distrattori="gruppo" if voce.get("distrattori") == "gruppo" else "area",
+                punti=_punti_validi(voce.get("punti")),
             ))
         except (KeyError, TypeError):
             continue
