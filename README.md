@@ -43,7 +43,8 @@ py -3.11 -m venv .venv
 
 ## Creare l'eseguibile: `build.bat`
 
-Doppio clic su `build.bat` (oppure `build.bat --senza-test` per saltare i test). Lo script:
+Doppio clic su `build.bat` (oppure `build.bat --senza-test` per saltare i test; con `--zip` crea
+anche lo zip da condividere, vedi sotto). Lo script:
 
 1. cerca Python 3.12 / 3.11 / 3.13 / 3.10;
 2. crea l'ambiente virtuale in `%LOCALAPPDATA%\FlagGame-build\venv` (**fuori da OneDrive**, perché
@@ -66,6 +67,26 @@ L'eseguibile non è firmato digitalmente, quindi al primo avvio Windows può mos
 «Windows ha protetto il PC». Clicca **Ulteriori informazioni** → **Esegui comunque**. Capita
 con tutti i programmi creati in proprio con PyInstaller; se l'antivirus lo blocca, aggiungi
 un'eccezione per la cartella `dist\FlagGame`.
+
+## Condividere il gioco: lo zip
+
+Doppio clic su **`crea_zip.bat`** (equivale a `build.bat --zip`): dopo test ed eseguibile crea
+`dist\FlagGame-<versione>.zip`, circa 90 MB, da mandare con Google Drive, WeTransfer o simili
+(troppo grande per un'email). Dentro c'è la cartella `FlagGame` pronta all'uso:
+
+```
+FlagGame/
+  FlagGame.exe      doppio clic per giocare: non serve installare niente
+  _internal/        librerie Qt e Python
+  dati/             nomi, continenti, livelli (modificabili)
+  flags/            le bandiere, accanto all'eseguibile (dove il gioco le cerca per prime)
+  LEGGIMI.txt       istruzioni: estrarre lo zip, avviso di SmartScreen, dove finisce la classifica
+```
+
+Lo zip non contiene classifica né impostazioni (stanno in `%APPDATA%`): chi lo riceve parte da
+zero. Prima di finire, `tools\crea_zip.py` estrae lo zip in una cartella temporanea fuori dal
+progetto e avvia `FlagGame.exe --verifica`, per controllare che il gioco estratto trovi le sue
+bandiere. Serve Windows 10 o 11 a 64 bit.
 
 ## Dove sono salvati i dati
 
@@ -255,6 +276,7 @@ assets/                     icona dell'applicazione
 tests/                      test pytest
 tools/genera_icona.py       rigenera assets/icona.ico dal logo
 tools/aggiorna_bandiere.py  scarica le bandiere ufficiali da Wikimedia Commons
+tools/crea_zip.py           crea dist/FlagGame-<versione>.zip (usato da crea_zip.bat)
 tools/fonti_bandiere.json   fonte, licenza e note di ogni bandiera
 ```
 
@@ -278,3 +300,12 @@ bandiere; l'apertura di tutte le schermate in tema chiaro e scuro e alla dimensi
 giocando partite vere con tastiera e mouse. Con la variabile `FLAGGAME_SCREENSHOT=<cartella>`
 i test dell'interfaccia salvano uno screenshot di ogni schermata. I test non toccano i dati in
 `%APPDATA%`.
+
+## Crediti
+
+Le immagini delle bandiere vengono da [Wikimedia Commons](https://commons.wikimedia.org). Quasi
+tutte sono di pubblico dominio (319) o CC0 (7); cinque sono sotto licenza
+[CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) (Antartide, Paesi Baschi, Čukotka,
+Chakassia, Sardegna), una «copyrighted free use» (Mississippi) e una OGL (Oman). Per ogni
+bandiera il file `tools/fonti_bandiere.json` indica il file di origine, la licenza e la pagina di
+Commons, dove sono citati gli autori.

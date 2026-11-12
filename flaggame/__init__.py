@@ -5,4 +5,4 @@ dipende da Qt e si può testare da sola; l'interfaccia sta nel pacchetto ``ui``.
 """
 
 NOME_APP = "The Best Flag Game"
-VERSIONE = "2.0.0"
+VERSIONE = "2.1.0"
