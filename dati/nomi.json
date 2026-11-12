@@ -1011,8 +1011,7 @@
     "nepal": {
       "nome": "Nepal",
       "iso": "NP",
-      "tipo": "stato",
-      "ritaglia_sfondo": true
+      "tipo": "stato"
     },
     "netherlands": {
       "nome": "Paesi Bassi",

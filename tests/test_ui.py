@@ -269,23 +269,47 @@ def test_dimensione_minima(app, eccezioni):
     assert eccezioni == []
 
 
+def test_ritaglio_bordi(app):
+    """Bordi trasparenti tolti sempre; sfondo uniforme tolto solo se richiesto
+    (molte bandiere hanno un bordo uniforme che fa parte del disegno)."""
+    from PySide6.QtGui import QColor, QImage, QPainter
+    from flaggame.ui.immagini import ritaglia_bordi
+
+    bande = QImage(600, 600, QImage.Format.Format_ARGB32)
+    bande.fill(QColor(0, 0, 0, 0))
+    p = QPainter(bande)
+    p.fillRect(0, 120, 600, 360, QColor("#E05206"))
+    p.end()
+    r = ritaglia_bordi(bande)
+    assert (r.width(), r.height()) == (600, 360)
+
+    tela = QImage(400, 300, QImage.Format.Format_RGB32)
+    tela.fill(QColor("white"))
+    p = QPainter(tela)
+    p.fillRect(20, 30, 150, 200, QColor("#DC143C"))
+    p.end()
+    assert (ritaglia_bordi(tela, True).width(), ritaglia_bordi(tela, True).height()) == (150, 200)
+    assert (ritaglia_bordi(tela).width(), ritaglia_bordi(tela).height()) == (400, 300)
+
+
 @pytest.mark.skipif(not CARTELLA_BANDIERE.is_dir(), reason="cartella flags non presente")
-def test_ritaglio_bordi(app, catalogo):
-    """Niger 600x600 con bande trasparenti -> 600x360; Nepal su tela bianca -> forma verticale.
-    Le altre bandiere (es. Giappone, Russia con il bianco sul bordo) restano intere."""
-    from flaggame.ui.immagini import CacheImmagini, percorso_normale
+def test_bandiere_con_proporzioni_ufficiali(app, catalogo):
+    """Le bandiere di Wikimedia Commons hanno le proporzioni ufficiali: in Nerd
+    Monaco (5:4) e Indonesia (3:2) non sono più due immagini identiche."""
+    from flaggame.ui.immagini import CacheImmagini
     cache = CacheImmagini()
     cache.da_ritagliare = catalogo.percorsi_da_ritagliare()
-    assert cache.da_ritagliare == {percorso_normale(CARTELLA_BANDIERE / c / "nepal.gif")
-                                   for c in ("easy", "intermediate", "difficult/17")}
-    niger = cache.dimensione(CARTELLA_BANDIERE / "easy" / "niger.png")
-    assert (niger.width(), niger.height()) == (600, 360)
-    nepal = cache.dimensione(CARTELLA_BANDIERE / "easy" / "nepal.gif")
-    assert nepal.width() / nepal.height() < 0.9
-    for nome, dim in (("japan.png", (275, 183)), ("russia.png", (275, 183)), ("poland.png", (480, 300))):
-        d = cache.dimensione(CARTELLA_BANDIERE / "easy" / nome)
-        assert (d.width(), d.height()) == dim, nome
-    assert cache.pixmap(CARTELLA_BANDIERE / "easy" / "nepal.gif", 100, 100) is not None
+
+    def rapporto(id_bandiera: str) -> float:
+        d = cache.dimensione(catalogo.percorso(id_bandiera))
+        return d.width() / d.height()
+
+    for id_bandiera, atteso in (("monaco", 5 / 4), ("indonesia", 3 / 2), ("qatar", 28 / 11),
+                                ("switzerland", 1.0), ("italy", 3 / 2), ("belgium", 15 / 13),
+                                ("united states", 1.9), ("russia", 3 / 2)):
+        assert abs(rapporto(id_bandiera) - atteso) < 0.03, id_bandiera
+    assert rapporto("nepal") < 0.9                     # forma non rettangolare, sfondo trasparente
+    assert cache.pixmap(catalogo.percorso("nepal"), 100, 100) is not None
 
 
 def test_cartella_non_trovata(app, eccezioni, monkeypatch, tmp_path):

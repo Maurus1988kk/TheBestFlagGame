@@ -117,6 +117,30 @@ questa versione entrano nel riepilogo, nei livelli e nell'andamento, ma non nei 
 bandiere da ripassare (non hanno il dettaglio delle risposte). **Cancella classifica e
 statistiche** (Impostazioni) le azzera insieme.
 
+## Le immagini delle bandiere
+
+Tutte le bandiere vengono da **Wikimedia Commons**, con colori e proporzioni ufficiali e la stessa
+altezza (600 px). La fonte di ognuna (file di Commons, licenza, eventuale nota) è in
+`tools/fonti_bandiere.json`; i casi senza una bandiera ufficiale unica (Afghanistan, Antartide,
+Irlanda del Nord, Isole Cocos, Nuova Caledonia…) sono spiegati in
+[STRUTTURA_DATI.md](STRUTTURA_DATI.md#8-fonti-delle-immagini).
+
+Per aggiornare le bandiere (per esempio se uno stato cambia bandiera) si usa lo script
+`tools/aggiorna_bandiere.py`, con il Python di build:
+
+```bat
+set PY=%LOCALAPPDATA%\FlagGame-buildenv\Scripts\python
+%PY% toolsggiorna_bandiere.py info        & rem controlla i file su Commons, aggiorna licenze e pagine
+%PY% toolsggiorna_bandiere.py scarica     & rem scarica i PNG nella cache (salta quelli già pronti)
+%PY% toolsggiorna_bandiere.py confronto   & rem pagina HTML con le bandiere prima/dopo
+%PY% toolsggiorna_bandiere.py applica     & rem sostituisce i file in flags\ (stessi nomi e cartelle)
+```
+
+Per cambiare una bandiera basta correggere il campo `"commons"` nel JSON e rilanciare `info`,
+`scarica` e `applica`. Wikimedia limita i download dei programmi automatici: lo script fa una
+pausa tra un file e l'altro e aspetta quando il server lo chiede, quindi scaricarle tutte richiede
+circa un'ora. Il progetto è sotto git: `git checkout -- flags` riporta le immagini di prima.
+
 ## Aggiungere bandiere
 
 1. Copia l'immagine (PNG, JPG, GIF, BMP, WEBP o SVG) nella cartella del livello, ad esempio
@@ -135,6 +159,8 @@ statistiche** (Impostazioni) le azzera insieme.
 3. Continente: aggiungilo in `dati\continenti.json` (`"mappa"`), oppure metti una copia
    dell'immagine nella sottocartella giusta di `flags\theworld\`. Con `null` la bandiera è
    esclusa dal filtro per area ma resta giocabile in «Tutto il mondo».
+4. Facoltativo: aggiungi la fonte in `tools/fonti_bandiere.json` (`"commons": "Flag of ….svg"`),
+   così lo script può scaricarla nella versione ufficiale come tutte le altre.
 
 All'avvio il gioco controlla le immagini: i file vuoti o danneggiati vengono sostituiti con la
 stessa bandiera presa da un'altra cartella, se c'è. Il numero di avvisi compare in Impostazioni.
@@ -195,8 +221,8 @@ continente, come gli altri livelli.
   animazioni di hover e dissolvenza tra le schermate.
 * Le bandiere sono mostrate **sempre con le proporzioni originali**, centrate in un riquadro
   fisso con un bordo grigio sottile (utile per le bandiere con parti bianche). I bordi
-  trasparenti delle immagini vengono tolti; il Nepal, che nel file è disegnato su una tela bianca,
-  viene ritagliato (`"ritaglia_sfondo": true` in `nomi.json`) e appare con la sua forma vera.
+  trasparenti delle immagini vengono tolti (il Nepal appare con la sua forma vera); per
+  un'immagine disegnata su una tela di colore uniforme c'è `"ritaglia_sfondo": true` in `nomi.json`.
 * Finestra ridimensionabile (minimo 1000×700); posizione e dimensione vengono ricordate.
 * Suoni facoltativi per risposta giusta, sbagliata e fine partita.
 * **Traduzione**: tutti i testi sono in `flaggame\testi.py`.
@@ -228,6 +254,8 @@ dati/                       livelli.json, nomi.json, continenti.json
 assets/                     icona dell'applicazione
 tests/                      test pytest
 tools/genera_icona.py       rigenera assets/icona.ico dal logo
+tools/aggiorna_bandiere.py  scarica le bandiere ufficiali da Wikimedia Commons
+tools/fonti_bandiere.json   fonte, licenza e note di ogni bandiera
 ```
 
 La logica (`dati`, `generatore`, `partita`, `classifica`, `statistiche`, `persistenza`, `suoni`)

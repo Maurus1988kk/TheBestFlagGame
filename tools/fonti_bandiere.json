@@ -1,0 +1,3357 @@
+{
+ "_descrizione": "Fonte ufficiale di ogni bandiera su Wikimedia Commons (https://commons.wikimedia.org). 'commons' e' il nome del file; 'licenza' e 'pagina' sono aggiunti da tools/aggiorna_bandiere.py info; 'nota' spiega i casi senza una bandiera ufficiale unica. Per cambiare una bandiera: correggi 'commons' e rilancia lo script.",
+ "altezza": 600,
+ "bandiere": {
+  "aaland island": {
+   "commons": "Flag of Åland.svg",
+   "file": "Flag of Åland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_%C3%85land.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 520,
+   "altezza": 340,
+   "licenza": "Public domain"
+  },
+  "adygea": {
+   "commons": "Flag of Adygea.svg",
+   "file": "Flag of Adygea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Adygea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Adygea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "afghanistan": {
+   "commons": "Flag of Afghanistan (2013–2021).svg",
+   "nota": "Dal 2021 i talebani usano una bandiera bianca con la shahada (File:Flag of the Taliban.svg); il tricolore è quello ancora riconosciuto dall'ONU e da quasi tutti gli stati.",
+   "file": "Flag of Afghanistan (2013–2021).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Afghanistan_(2013%E2%80%932021).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "alabama": {
+   "commons": "Flag of Alabama.svg",
+   "file": "Flag of Alabama.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Alabama.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Alabama.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "alaska": {
+   "commons": "Flag of Alaska.svg",
+   "file": "Flag of Alaska.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Alaska.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Alaska.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1416,
+   "altezza": 1000,
+   "licenza": "Public domain"
+  },
+  "albania": {
+   "commons": "Flag of Albania.svg",
+   "file": "Flag of Albania.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Albania.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 700,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "algeria": {
+   "commons": "Flag of Algeria.svg",
+   "file": "Flag of Algeria.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Algeria.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "altai": {
+   "commons": "Flag of Altai Republic.svg",
+   "file": "Flag of Altai Republic.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Altai_Republic.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Altai_Republic.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "american samoa": {
+   "commons": "Flag of American Samoa.svg",
+   "file": "Flag of American Samoa.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_American_Samoa.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "amur": {
+   "commons": "Flag of Amur Oblast.svg",
+   "file": "Flag of Amur Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Amur_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Amur_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "andorra": {
+   "commons": "Flag of Andorra.svg",
+   "file": "Flag of Andorra.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Andorra.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 700,
+   "licenza": "Public domain"
+  },
+  "angola": {
+   "commons": "Flag of Angola.svg",
+   "file": "Flag of Angola.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Angola.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "anguilla": {
+   "commons": "Flag of Anguilla.svg",
+   "file": "Flag of Anguilla.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Anguilla.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "antartica": {
+   "commons": "Flag of the Antarctic Treaty.svg",
+   "file": "Flag of the Antarctic Treaty.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Antarctic_Treaty.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_the_Antarctic_Treaty.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "CC BY-SA 3.0",
+   "nota": "Non esiste una bandiera ufficiale dell'Antartide: si usa quella del Trattato Antartico."
+  },
+  "antigua e barbuda": {
+   "commons": "Flag of Antigua and Barbuda.svg",
+   "file": "Flag of Antigua and Barbuda.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "antille olandesi": {
+   "commons": "Flag of the Netherlands Antilles (1986–2010).svg",
+   "file": "Flag of the Netherlands Antilles (1986–2010).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands_Antilles_(1986%E2%80%932010).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_Netherlands_Antilles_%281986%E2%80%932010%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain",
+   "nota": "Territorio sciolto nel 2010: bandiera storica 1986–2010."
+  },
+  "argentina": {
+   "commons": "Flag of Argentina.svg",
+   "file": "Flag of Argentina.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "arizona": {
+   "commons": "Flag of Arizona.svg",
+   "file": "Flag of Arizona.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Arizona.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "arkansas": {
+   "commons": "Flag of Arkansas.svg",
+   "file": "Flag of Arkansas.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Arkansas.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 450,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "armenia": {
+   "commons": "Flag of Armenia.svg",
+   "file": "Flag of Armenia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Armenia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "aruba": {
+   "commons": "Flag of Aruba.svg",
+   "file": "Flag of Aruba.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Aruba.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "ascension island": {
+   "commons": "Flag of Ascension Island.svg",
+   "file": "Flag of Ascension Island.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ascension_Island.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Ascension_Island.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "australia": {
+   "commons": "Flag of Australia.svg",
+   "file": "Flag of Australia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1280,
+   "altezza": 640,
+   "licenza": "Public domain"
+  },
+  "austria": {
+   "commons": "Flag of Austria.svg",
+   "file": "Flag of Austria.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Austria.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "azerbaijan": {
+   "commons": "Flag of Azerbaijan.svg",
+   "file": "Flag of Azerbaijan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Azerbaijan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "bahamas": {
+   "commons": "Flag of the Bahamas.svg",
+   "file": "Flag of the Bahamas.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Bahamas.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "bahrain": {
+   "commons": "Flag of Bahrain.svg",
+   "file": "Flag of Bahrain.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bahrain.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "bangladesh": {
+   "commons": "Flag of Bangladesh.svg",
+   "file": "Flag of Bangladesh.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bangladesh.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 307,
+   "licenza": "Public domain"
+  },
+  "barbados": {
+   "commons": "Flag of Barbados.svg",
+   "file": "Flag of Barbados.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Barbados.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1500,
+   "altezza": 1000,
+   "licenza": "Public domain"
+  },
+  "bashkortostan": {
+   "commons": "Flag of Bashkortostan.svg",
+   "file": "Flag of Bashkortostan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bashkortostan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Flag_of_Bashkortostan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "basque country": {
+   "commons": "Flag of the Basque Country.svg",
+   "file": "Flag of the Basque Country.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Basque_Country.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_the_Basque_Country.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 560,
+   "licenza": "CC BY-SA 2.5"
+  },
+  "belarus": {
+   "commons": "Flag of Belarus.svg",
+   "file": "Flag of Belarus.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Belarus.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "belgium": {
+   "commons": "Flag of Belgium.svg",
+   "file": "Flag of Belgium.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 780,
+   "licenza": "Public domain"
+  },
+  "belize": {
+   "commons": "Flag of Belize.svg",
+   "file": "Flag of Belize.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Belize.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "benin": {
+   "commons": "Flag of Benin.svg",
+   "file": "Flag of Benin.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Benin.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "bermuda": {
+   "commons": "Flag of Bermuda.svg",
+   "file": "Flag of Bermuda.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bermuda.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "bhutan": {
+   "commons": "Flag of Bhutan.svg",
+   "file": "Flag of Bhutan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bhutan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "birmania - burma - myanmar": {
+   "commons": "Flag of Myanmar.svg",
+   "file": "Flag of Myanmar.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Myanmar.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "bolivia": {
+   "commons": "Flag of Bolivia (state).svg",
+   "nota": "Versione di stato con lo stemma, come nell'originale (quella civile non lo ha).",
+   "file": "Flag of Bolivia (state).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bolivia_(state).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Bolivia_%28state%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1100,
+   "altezza": 750,
+   "licenza": "Public domain"
+  },
+  "bosnia herzegovina": {
+   "commons": "Flag of Bosnia and Herzegovina.svg",
+   "file": "Flag of Bosnia and Herzegovina.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bosnia_and_Herzegovina.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "botswana": {
+   "commons": "Flag of Botswana.svg",
+   "file": "Flag of Botswana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Botswana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "brazil": {
+   "commons": "Flag of Brazil.svg",
+   "file": "Flag of Brazil.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 700,
+   "licenza": "Public domain"
+  },
+  "brunei": {
+   "commons": "Flag of Brunei.svg",
+   "file": "Flag of Brunei.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Brunei.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1440,
+   "altezza": 720,
+   "licenza": "Public domain"
+  },
+  "bulgaria": {
+   "commons": "Flag of Bulgaria.svg",
+   "file": "Flag of Bulgaria.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Bulgaria.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "burkina faso": {
+   "commons": "Flag of Burkina Faso.svg",
+   "file": "Flag of Burkina Faso.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Burkina_Faso.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "burundi": {
+   "commons": "Flag of Burundi.svg",
+   "file": "Flag of Burundi.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Burundi.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "buryatia": {
+   "commons": "Flag of Buryatia.svg",
+   "file": "Flag of Buryatia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Buryatia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Buryatia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "california": {
+   "commons": "Flag of California.svg",
+   "file": "Flag of California.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_California.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "cambodgia": {
+   "commons": "Flag of Cambodia.svg",
+   "file": "Flag of Cambodia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Cambodia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 640,
+   "licenza": "Public domain"
+  },
+  "cameroon": {
+   "commons": "Flag of Cameroon.svg",
+   "file": "Flag of Cameroon.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Cameroon.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "canada": {
+   "commons": "Flag of Canada.svg",
+   "file": "Flag of Canada.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "capo verde": {
+   "commons": "Flag of Cape Verde.svg",
+   "file": "Flag of Cape Verde (3-2).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Cape_Verde_(3-2).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Cape_Verde_%283-2%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "catalunia": {
+   "commons": "Flag of Catalonia.svg",
+   "file": "Flag of Catalonia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Catalonia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 810,
+   "altezza": 540,
+   "licenza": "Public domain"
+  },
+  "cayman islands": {
+   "commons": "Flag of the Cayman Islands.svg",
+   "file": "Flag of the Cayman Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Cayman_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "central african republic": {
+   "commons": "Flag of the Central African Republic.svg",
+   "file": "Flag of the Central African Republic.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Central_African_Republic.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "chad": {
+   "commons": "Flag of Chad.svg",
+   "file": "Flag of Chad.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Chad.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "chechnya": {
+   "commons": "Flag of the Chechen Republic.svg",
+   "file": "Flag of the Chechen Republic.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Chechen_Republic.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_the_Chechen_Republic.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 450,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "china": {
+   "commons": "Flag of the People's Republic of China.svg",
+   "file": "Flag of the People's Republic of China.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_People%27s_Republic_of_China.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "christmas island": {
+   "commons": "Flag of Christmas Island.svg",
+   "file": "Flag of Christmas Island.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Christmas_Island.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 256,
+   "licenza": "Public domain"
+  },
+  "chukotka": {
+   "commons": "Flag of Chukotka.svg",
+   "file": "Flag of Chukotka.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Chukotka.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Chukotka.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "CC BY-SA 3.0"
+  },
+  "chuvashia": {
+   "commons": "Flag of Chuvashia.svg",
+   "file": "Flag of Chuvashia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Chuvashia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_Chuvashia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 320,
+   "licenza": "Public domain"
+  },
+  "cile": {
+   "commons": "Flag of Chile.svg",
+   "file": "Flag of Chile.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Chile.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "cocos islands": {
+   "commons": "Local Flag of Keeling (Cocos) islands.png",
+   "nota": "Bandiera locale, non ufficiale: quella ufficiale del territorio è l'australiana, che nel gioco sarebbe identica all'Australia.",
+   "file": "Local Flag of Keeling (Cocos) islands.png",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Local_Flag_of_Keeling_(Cocos)_islands.png",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Local_Flag_of_Keeling_%28Cocos%29_islands.png",
+   "mime": "image/png",
+   "larghezza": 960,
+   "altezza": 480,
+   "licenza": "CC0"
+  },
+  "colombia": {
+   "commons": "Flag of Colombia.svg",
+   "file": "Flag of Colombia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Colombia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "colorado": {
+   "commons": "Flag of Colorado.svg",
+   "file": "Flag of Colorado.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Colorado.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1800,
+   "altezza": 1200,
+   "licenza": "Public domain"
+  },
+  "comoros islands": {
+   "commons": "Flag of the Comoros.svg",
+   "file": "Flag of the Comoros.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Comoros.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "congo": {
+   "commons": "Flag of the Republic of the Congo.svg",
+   "file": "Flag of the Republic of the Congo.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_the_Congo.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "congo democratic republic": {
+   "commons": "Flag of the Democratic Republic of the Congo.svg",
+   "file": "Flag of the Democratic Republic of the Congo.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Democratic_Republic_of_the_Congo.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "connecticut": {
+   "commons": "Flag of Connecticut.svg",
+   "file": "Flag of Connecticut.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Connecticut.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_Connecticut.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 330,
+   "altezza": 260,
+   "licenza": "Public domain"
+  },
+  "cook islands": {
+   "commons": "Flag of the Cook Islands.svg",
+   "file": "Flag of the Cook Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Cook_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "corsica": {
+   "commons": "Flag of Corsica.svg",
+   "file": "Flag of Corsica.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Corsica.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_of_Corsica.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 450,
+   "licenza": "CC0"
+  },
+  "costa rica": {
+   "commons": "Flag of Costa Rica (state).svg",
+   "nota": "Versione di stato con lo stemma, come nell'originale (quella civile non lo ha).",
+   "file": "Flag of Costa Rica (state).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Costa_Rica_(state).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "croatia": {
+   "commons": "Flag of Croatia.svg",
+   "file": "Flag of Croatia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Croatia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "cuba": {
+   "commons": "Flag of Cuba.svg",
+   "file": "Flag of Cuba.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Cuba.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "curacao": {
+   "commons": "Flag of Curaçao.svg",
+   "file": "Flag of Curaçao.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Cura%C3%A7ao.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "cyprus": {
+   "commons": "Flag of Cyprus.svg",
+   "file": "Flag of Cyprus.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Cyprus.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "czech republic": {
+   "commons": "Flag of the Czech Republic.svg",
+   "file": "Flag of the Czech Republic.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Czech_Republic.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "delaware": {
+   "commons": "Flag of Delaware.svg",
+   "file": "Flag of Delaware.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Delaware.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Flag_of_Delaware.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "denmark": {
+   "commons": "Flag of Denmark.svg",
+   "file": "Flag of Denmark.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Denmark.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 387,
+   "licenza": "Public domain"
+  },
+  "djibouti": {
+   "commons": "Flag of Djibouti.svg",
+   "file": "Flag of Djibouti.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Djibouti.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "dominica": {
+   "commons": "Flag of Dominica.svg",
+   "file": "Flag of Dominica.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Dominica.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "dominican republic": {
+   "commons": "Flag of the Dominican Republic.svg",
+   "file": "Flag of the Dominican Republic.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Dominican_Republic.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "east timor": {
+   "commons": "Flag of East Timor.svg",
+   "file": "Flag of East Timor.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_East_Timor.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "ecuador": {
+   "commons": "Flag of Ecuador.svg",
+   "file": "Flag of Ecuador.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1440,
+   "altezza": 960,
+   "licenza": "Public domain"
+  },
+  "egypt": {
+   "commons": "Flag of Egypt.svg",
+   "file": "Flag of Egypt.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Egypt.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "el salvador": {
+   "commons": "Flag of El Salvador.svg",
+   "file": "Flag of El Salvador.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_El_Salvador.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1005,
+   "altezza": 567,
+   "licenza": "Public domain"
+  },
+  "england": {
+   "commons": "Flag of England.svg",
+   "file": "Flag of England.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_England.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "equatorial guinea": {
+   "commons": "Flag of Equatorial Guinea.svg",
+   "file": "Flag of Equatorial Guinea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Equatorial_Guinea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "eritrea": {
+   "commons": "Flag of Eritrea.svg",
+   "file": "Flag of Eritrea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Eritrea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "estonia": {
+   "commons": "Flag of Estonia.svg",
+   "file": "Flag of Estonia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Estonia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 990,
+   "altezza": 630,
+   "licenza": "Public domain"
+  },
+  "etiopia": {
+   "commons": "Flag of Ethiopia.svg",
+   "file": "Flag of Ethiopia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "falklands": {
+   "commons": "Flag of the Falkland Islands.svg",
+   "file": "Flag of the Falkland Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Falkland_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "faroe islands": {
+   "commons": "Flag of the Faroe Islands.svg",
+   "file": "Flag of the Faroe Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Faroe_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1100,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "fiji": {
+   "commons": "Flag of Fiji.svg",
+   "file": "Flag of Fiji.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Fiji.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "finland": {
+   "commons": "Flag of Finland.svg",
+   "file": "Flag of Finland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Finland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1800,
+   "altezza": 1100,
+   "licenza": "Public domain"
+  },
+  "florida": {
+   "commons": "Flag of Florida.svg",
+   "file": "Flag of Florida.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Florida.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 4500,
+   "altezza": 3000,
+   "licenza": "Public domain"
+  },
+  "france": {
+   "commons": "Flag of France.svg",
+   "file": "Flag of France.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "french guyana": {
+   "commons": "Flag of French Guiana.svg",
+   "file": "Flag of French Guiana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_French_Guiana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_French_Guiana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "gabon": {
+   "commons": "Flag of Gabon.svg",
+   "file": "Flag of Gabon.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Gabon.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 750,
+   "licenza": "Public domain"
+  },
+  "gambia": {
+   "commons": "Flag of The Gambia.svg",
+   "file": "Flag of The Gambia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_The_Gambia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "georgia": {
+   "commons": "Flag of Georgia.svg",
+   "file": "Flag of Georgia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Georgia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "georgia (usa)": {
+   "commons": "Flag of Georgia (U.S. state).svg",
+   "file": "Flag of the State of Georgia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_State_of_Georgia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_the_State_of_Georgia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 960,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "germany": {
+   "commons": "Flag of Germany.svg",
+   "file": "Flag of Germany.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "ghana": {
+   "commons": "Flag of Ghana.svg",
+   "file": "Flag of Ghana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ghana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "gibraltar": {
+   "commons": "Flag of Gibraltar.svg",
+   "file": "Flag of Gibraltar.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Gibraltar.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "greece": {
+   "commons": "Flag of Greece.svg",
+   "file": "Flag of Greece.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "greenland": {
+   "commons": "Flag of Greenland.svg",
+   "file": "Flag of Greenland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Greenland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "grenada": {
+   "commons": "Flag of Grenada.svg",
+   "file": "Flag of Grenada.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Grenada.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "guam": {
+   "commons": "Flag of Guam.svg",
+   "file": "Flag of Guam.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Guam.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 738,
+   "altezza": 396,
+   "licenza": "Public domain"
+  },
+  "guatemala": {
+   "commons": "Flag of Guatemala.svg",
+   "file": "Flag of Guatemala.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Guatemala.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 960,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "guernsey": {
+   "commons": "Flag of Guernsey.svg",
+   "file": "Flag of Guernsey.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Guernsey.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "CC0"
+  },
+  "guinea": {
+   "commons": "Flag of Guinea.svg",
+   "file": "Flag of Guinea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Guinea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "guinea bissau": {
+   "commons": "Flag of Guinea-Bissau.svg",
+   "file": "Flag of Guinea-Bissau.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Guinea-Bissau.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "guyana": {
+   "commons": "Flag of Guyana.svg",
+   "file": "Flag of Guyana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Guyana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "haiti": {
+   "commons": "Flag of Haiti.svg",
+   "file": "Flag of Haiti.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Haiti.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "hawai": {
+   "commons": "Flag of Hawaii.svg",
+   "file": "Flag of Hawaii.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Hawaii.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Hawaii.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "honduras": {
+   "commons": "Flag of Honduras.svg",
+   "file": "Flag of Honduras (1949–2022, 2026–present).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Honduras_(1949%E2%80%932022,_2026%E2%80%93present).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Honduras_%281949%E2%80%932022%2C_2026%E2%80%93present%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "hong kong": {
+   "commons": "Flag of Hong Kong.svg",
+   "file": "Flag of Hong Kong.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Hong_Kong.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "hungary": {
+   "commons": "Flag of Hungary.svg",
+   "file": "Flag of Hungary.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Hungary.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "iceland": {
+   "commons": "Flag of Iceland.svg",
+   "file": "Flag of Iceland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1250,
+   "altezza": 900,
+   "licenza": "Public domain"
+  },
+  "idaho": {
+   "commons": "Flag of Idaho.svg",
+   "file": "Flag of Idaho.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Idaho.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Idaho.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 3168,
+   "altezza": 2496,
+   "licenza": "Public domain"
+  },
+  "illinois": {
+   "commons": "Flag of Illinois.svg",
+   "file": "Flag of Illinois.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Illinois.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Illinois.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 500,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "india": {
+   "commons": "Flag of India.svg",
+   "file": "Flag of India.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "indiana": {
+   "commons": "Flag of Indiana.svg",
+   "file": "Flag of Indiana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Indiana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Indiana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "indonesia": {
+   "commons": "Flag of Indonesia.svg",
+   "file": "Flag of Indonesia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "ingushetia": {
+   "commons": "Flag of Ingushetia.svg",
+   "file": "Flag of Ingushetia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ingushetia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Ingushetia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "iowa": {
+   "commons": "Flag of Iowa.svg",
+   "file": "Flag of Iowa.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Iowa.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Iowa.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 714,
+   "altezza": 477,
+   "licenza": "Public domain"
+  },
+  "iran": {
+   "commons": "Flag of Iran.svg",
+   "file": "Flag of Iran.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Iran.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 630,
+   "altezza": 360,
+   "licenza": "Public domain"
+  },
+  "iraq": {
+   "commons": "Flag of Iraq.svg",
+   "file": "Flag of Iraq.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Iraq.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "ireland": {
+   "commons": "Flag of Ireland.svg",
+   "file": "Flag of Ireland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ireland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "irkutsk": {
+   "commons": "Flag of Irkutsk Oblast.svg",
+   "file": "Flag of Irkutsk Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Irkutsk_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Flag_of_Irkutsk_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 658,
+   "licenza": "Public domain"
+  },
+  "island of man": {
+   "commons": "Flag of the Isle of Man.svg",
+   "file": "Flag of the Isle of Man.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Isle_of_Man.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "CC0"
+  },
+  "israel": {
+   "commons": "Flag of Israel.svg",
+   "file": "Flag of Israel.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Israel.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1100,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "italy": {
+   "commons": "Flag of Italy.svg",
+   "file": "Flag of Italy.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Italy.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1500,
+   "altezza": 1000,
+   "licenza": "Public domain"
+  },
+  "ivory coast": {
+   "commons": "Flag of Côte d'Ivoire.svg",
+   "file": "Flag of Côte d'Ivoire.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_C%C3%B4te_d%27Ivoire.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 341,
+   "licenza": "Public domain"
+  },
+  "jamaica": {
+   "commons": "Flag of Jamaica.svg",
+   "file": "Flag of Jamaica.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "japan": {
+   "commons": "Flag of Japan.svg",
+   "file": "Flag of Japan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "jersey": {
+   "commons": "Flag of Jersey.svg",
+   "file": "Flag of Jersey.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Jersey.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "jordan": {
+   "commons": "Flag of Jordan.svg",
+   "file": "Flag of Jordan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Jordan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "kabardino-balkaria": {
+   "commons": "Flag of Kabardino-Balkaria.svg",
+   "file": "Flag of Kabardino-Balkaria.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kabardino-Balkaria.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_Kabardino-Balkaria.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "kalmykia": {
+   "commons": "Flag of Kalmykia.svg",
+   "file": "Flag of Kalmykia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kalmykia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Kalmykia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 640,
+   "altezza": 320,
+   "licenza": "Public domain"
+  },
+  "kamchatka": {
+   "commons": "Flag of Kamchatka Krai.svg",
+   "file": "Flag of Kamchatka Krai.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kamchatka_Krai.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_Kamchatka_Krai.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "kansas": {
+   "commons": "Flag of Kansas.svg",
+   "file": "Flag of Kansas.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kansas.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Kansas.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 500,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "karachay-cherkessia": {
+   "commons": "Flag of Karachay-Cherkessia.svg",
+   "file": "Flag of Karachay-Cherkessia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Karachay-Cherkessia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Karachay-Cherkessia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "karelia": {
+   "commons": "Flag of Karelia.svg",
+   "file": "Flag of Karelia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Karelia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Flag_of_Karelia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "kazakhstan": {
+   "commons": "Flag of Kazakhstan.svg",
+   "file": "Flag of Kazakhstan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kazakhstan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "kentucky": {
+   "commons": "Flag of Kentucky.svg",
+   "file": "Flag of Kentucky.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kentucky.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Kentucky.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 950,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "kenya": {
+   "commons": "Flag of Kenya.svg",
+   "file": "Flag of Kenya.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kenya.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "khakassia": {
+   "commons": "Flag of Khakassia.svg",
+   "file": "Flag of Khakassia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Khakassia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Khakassia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "CC BY-SA 3.0"
+  },
+  "kiribati": {
+   "commons": "Flag of Kiribati.svg",
+   "file": "Flag of Kiribati.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kiribati.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "komi": {
+   "commons": "Flag of Komi.svg",
+   "file": "Flag of Komi.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Komi.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Komi.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "kosovo": {
+   "commons": "Flag of Kosovo.svg",
+   "file": "Flag of Kosovo.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kosovo.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kosovo.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 840,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "kuwait": {
+   "commons": "Flag of Kuwait.svg",
+   "file": "Flag of Kuwait.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kuwait.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "kyrgyzstan": {
+   "commons": "Flag of Kyrgyzstan.svg",
+   "file": "Flag of Kyrgyzstan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Kyrgyzstan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain",
+   "nota": "Bandiera aggiornata: cambiata nel 2023 (raggi del sole diritti)."
+  },
+  "laos": {
+   "commons": "Flag of Laos.svg",
+   "file": "Flag of Laos.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Laos.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "latvia": {
+   "commons": "Flag of Latvia.svg",
+   "file": "Flag of Latvia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Latvia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "lebanon": {
+   "commons": "Flag of Lebanon.svg",
+   "file": "Flag of Lebanon.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Lebanon.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 2880,
+   "altezza": 1920,
+   "licenza": "Public domain"
+  },
+  "lesotho": {
+   "commons": "Flag of Lesotho.svg",
+   "file": "Flag of Lesotho.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Lesotho.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "liberia": {
+   "commons": "Flag of Liberia.svg",
+   "file": "Flag of Liberia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Liberia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1140,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "libia": {
+   "commons": "Flag of Libya.svg",
+   "file": "Flag of Libya.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Libya.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 960,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "liechtenstein": {
+   "commons": "Flag of Liechtenstein.svg",
+   "file": "Flag of Liechtenstein.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Liechtenstein.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "lithuania": {
+   "commons": "Flag of Lithuania.svg",
+   "file": "Flag of Lithuania.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Lithuania.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "louisiana": {
+   "commons": "Flag of Louisiana.svg",
+   "file": "Flag of Louisiana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Louisiana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_Louisiana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 7040,
+   "altezza": 4556,
+   "licenza": "Public domain"
+  },
+  "luxembourg": {
+   "commons": "Flag of Luxembourg.svg",
+   "file": "Flag of Luxembourg.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Luxembourg.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 307,
+   "licenza": "Public domain"
+  },
+  "macao": {
+   "commons": "Flag of Macau.svg",
+   "file": "Flag of Macau.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Macau.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "macedonia": {
+   "commons": "Flag of North Macedonia.svg",
+   "file": "Flag of North Macedonia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Macedonia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "madagascar": {
+   "commons": "Flag of Madagascar.svg",
+   "file": "Flag of Madagascar.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Madagascar.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "magadan": {
+   "commons": "Flag of Magadan Oblast.svg",
+   "file": "Flag of Magadan Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Magadan_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Magadan_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "maine": {
+   "commons": "Flag of Maine.svg",
+   "file": "Flag of Maine.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Maine.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Maine.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 6336,
+   "altezza": 4992,
+   "licenza": "Public domain"
+  },
+  "malawi": {
+   "commons": "Flag of Malawi.svg",
+   "file": "Flag of Malawi.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Malawi.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "malaysia": {
+   "commons": "Flag of Malaysia.svg",
+   "file": "Flag of Malaysia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Malaysia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "maldives": {
+   "commons": "Flag of Maldives.svg",
+   "file": "Flag of Maldives.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Maldives.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 720,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "mali": {
+   "commons": "Flag of Mali.svg",
+   "file": "Flag of Mali.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mali.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "malta": {
+   "commons": "Flag of Malta.svg",
+   "file": "Flag of Malta.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Malta.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "mariana islands": {
+   "commons": "Flag of the Northern Mariana Islands.svg",
+   "file": "Flag of the Northern Mariana Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Northern_Mariana_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1100,
+   "altezza": 550,
+   "licenza": "Public domain"
+  },
+  "marshall islands": {
+   "commons": "Flag of the Marshall Islands.svg",
+   "file": "Flag of the Marshall Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Marshall_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1140,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "martinica": {
+   "commons": "Flag of Martinique.svg",
+   "file": "Flag-of-Martinique.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag-of-Martinique.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag-of-Martinique.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain",
+   "nota": "Bandiera adottata nel 2023 dalla Collettività territoriale; lo screenshot aveva la vecchia bandiera coloniale con i serpenti."
+  },
+  "maryland": {
+   "commons": "Flag of Maryland.svg",
+   "file": "Flag of Maryland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Maryland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Maryland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "massachusetts": {
+   "commons": "Flag of Massachusetts.svg",
+   "file": "Flag of Massachusetts.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Massachusetts.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Massachusetts.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1500,
+   "altezza": 900,
+   "licenza": "Public domain"
+  },
+  "mauritania": {
+   "commons": "Flag of Mauritania.svg",
+   "file": "Flag of Mauritania.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritania.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain",
+   "nota": "Bandiera aggiornata: cambiata nel 2017 (strisce rosse)."
+  },
+  "mauritius": {
+   "commons": "Flag of Mauritius.svg",
+   "file": "Flag of Mauritius.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritius.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "mexico": {
+   "commons": "Flag of Mexico.svg",
+   "file": "Flag of Mexico.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 980,
+   "altezza": 560,
+   "licenza": "Public domain"
+  },
+  "michigan": {
+   "commons": "Flag of Michigan.svg",
+   "file": "Flag of Michigan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Michigan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Michigan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 342,
+   "licenza": "Public domain"
+  },
+  "micronesia": {
+   "commons": "Flag of the Federated States of Micronesia.svg",
+   "file": "Flag of the Federated States of Micronesia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Federated_States_of_Micronesia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 760,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "minnesota": {
+   "commons": "Flag of Minnesota.svg",
+   "file": "Flag of Minnesota.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Minnesota.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Minnesota.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain",
+   "nota": "Bandiera aggiornata: cambiata nel 2024."
+  },
+  "mississippi": {
+   "commons": "Flag of Mississippi.svg",
+   "file": "Flag of Mississippi.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mississippi.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_Mississippi.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 720,
+   "licenza": "Copyrighted free use",
+   "nota": "Bandiera aggiornata: cambiata nel 2021 (lo screenshot aveva ancora l'emblema confederato)."
+  },
+  "missouri": {
+   "commons": "Flag of Missouri.svg",
+   "file": "Flag of Missouri.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Missouri.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Missouri.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 2400,
+   "altezza": 1400,
+   "licenza": "Public domain"
+  },
+  "moldova": {
+   "commons": "Flag of Moldova.svg",
+   "file": "Flag of Moldova.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Moldova.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1800,
+   "altezza": 900,
+   "licenza": "Public domain"
+  },
+  "monaco": {
+   "commons": "Flag of Monaco.svg",
+   "file": "Flag of Monaco.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Monaco.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "mongolia": {
+   "commons": "Flag of Mongolia.svg",
+   "file": "Flag of Mongolia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mongolia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "montana": {
+   "commons": "Flag of Montana.svg",
+   "file": "Flag of Montana.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Montana.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_Montana.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 768,
+   "altezza": 512,
+   "licenza": "Public domain"
+  },
+  "montenegro": {
+   "commons": "Flag of Montenegro.svg",
+   "file": "Flag of Montenegro.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Montenegro.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "montserrat": {
+   "commons": "Flag of Montserrat.svg",
+   "file": "Flag of Montserrat.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Montserrat.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "mordovia": {
+   "commons": "Flag of Mordovia.svg",
+   "file": "Flag of Mordovia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mordovia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Mordovia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 341,
+   "licenza": "Public domain"
+  },
+  "morocco": {
+   "commons": "Flag of Morocco.svg",
+   "file": "Flag of Morocco.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Morocco.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "mozambique": {
+   "commons": "Flag of Mozambique.svg",
+   "file": "Flag of Mozambique.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "namibia": {
+   "commons": "Flag of Namibia.svg",
+   "file": "Flag of Namibia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Namibia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "nauru": {
+   "commons": "Flag of Nauru.svg",
+   "file": "Flag of Nauru.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nauru.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "nebraska": {
+   "commons": "Flag of Nebraska.svg",
+   "file": "Flag of Nebraska.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nebraska.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Nebraska.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 450,
+   "licenza": "Public domain"
+  },
+  "nenetsia": {
+   "commons": "Flag of Nenets Autonomous District.svg",
+   "file": "Flag of Nenets Autonomous District.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nenets_Autonomous_District.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Flag_of_Nenets_Autonomous_District.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "nepal": {
+   "commons": "Flag of Nepal.svg",
+   "file": "Flag of Nepal.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nepal.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 726,
+   "altezza": 885,
+   "licenza": "Public domain"
+  },
+  "netherlands": {
+   "commons": "Flag of the Netherlands.svg",
+   "file": "Flag of the Netherlands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "nevada": {
+   "commons": "Flag of Nevada.svg",
+   "file": "Flag of Nevada.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nevada.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Nevada.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "new caledonia": {
+   "commons": "Flag of FLNKS.svg",
+   "nota": "Dal 2010 la Nuova Caledonia ha due bandiere ufficiali usate insieme (il tricolore francese e quella kanak): si usa solo la kanak, come nell'originale.",
+   "file": "Flag of FLNKS.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_FLNKS.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_FLNKS.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 450,
+   "licenza": "Public domain"
+  },
+  "new hampshire": {
+   "commons": "Flag of New Hampshire.svg",
+   "file": "Flag of New Hampshire.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Hampshire.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_New_Hampshire.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 660,
+   "altezza": 440,
+   "licenza": "Public domain"
+  },
+  "new jersey": {
+   "commons": "Flag of New Jersey.svg",
+   "file": "Flag of New Jersey.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Jersey.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_New_Jersey.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "new mexico": {
+   "commons": "Flag of New Mexico.svg",
+   "file": "Flag of New Mexico.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Mexico.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_New_Mexico.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1800,
+   "altezza": 1200,
+   "licenza": "Public domain"
+  },
+  "new york": {
+   "commons": "Flag of New York.svg",
+   "file": "Flag of New York.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_New_York.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_New_York.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 450,
+   "licenza": "Public domain"
+  },
+  "new zeland": {
+   "commons": "Flag of New Zealand.svg",
+   "file": "Flag of New Zealand.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "nicaragua": {
+   "commons": "Flag of Nicaragua.svg",
+   "file": "Flag of Nicaragua.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nicaragua.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "niger": {
+   "commons": "Flag of Niger.svg",
+   "file": "Flag of Niger.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Niger.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 700,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "nigeria": {
+   "commons": "Flag of Nigeria.svg",
+   "file": "Flag of Nigeria.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Nigeria.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "niue island": {
+   "commons": "Flag of Niue.svg",
+   "file": "Flag of Niue.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Niue.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "norfolk island": {
+   "commons": "Flag of Norfolk Island.svg",
+   "file": "Flag of Norfolk Island.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Norfolk_Island.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 920,
+   "altezza": 460,
+   "licenza": "CC0"
+  },
+  "north carolina": {
+   "commons": "Flag of North Carolina.svg",
+   "file": "Flag of North Carolina.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Carolina.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Flag_of_North_Carolina.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "north dakota": {
+   "commons": "Flag of North Dakota.svg",
+   "file": "Flag of North Dakota.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Dakota.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Flag_of_North_Dakota.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1247,
+   "altezza": 983,
+   "licenza": "Public domain"
+  },
+  "north korea": {
+   "commons": "Flag of North Korea.svg",
+   "file": "Flag of North Korea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Korea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "north ossetia-alania": {
+   "commons": "Flag of North Ossetia.svg",
+   "file": "Flag of North Ossetia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Ossetia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_North_Ossetia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "northern ireland": {
+   "commons": "Flag of Northern Ireland (1953–1972).svg",
+   "file": "Flag of Northern Ireland (1953–1972).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Northern_Ireland_(1953%E2%80%931972).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Northern_Ireland_%281953%E2%80%931972%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain",
+   "nota": "Dal 1972 non ha una bandiera ufficiale propria (vale l'Union Jack): si usa la Ulster Banner, la più diffusa."
+  },
+  "norway": {
+   "commons": "Flag of Norway.svg",
+   "file": "Flag of Norway.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 372,
+   "licenza": "Public domain"
+  },
+  "novosibirsk": {
+   "commons": "Flag of Novosibirsk Oblast.svg",
+   "file": "Flag of Novosibirsk Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Novosibirsk_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Novosibirsk_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain",
+   "nota": "Bandiera della regione (oblast'); lo screenshot aveva quella della città di Novosibirsk."
+  },
+  "ohio": {
+   "commons": "Flag of Ohio.svg",
+   "file": "Flag of Ohio.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ohio.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Ohio.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 520,
+   "altezza": 320,
+   "licenza": "Public domain"
+  },
+  "oklahoma": {
+   "commons": "Flag of Oklahoma.svg",
+   "file": "Flag of Oklahoma.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Oklahoma.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Oklahoma.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 675,
+   "altezza": 450,
+   "licenza": "Public domain"
+  },
+  "oman": {
+   "commons": "Flag of Oman.svg",
+   "file": "Flag of Oman.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Oman.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1050,
+   "altezza": 600,
+   "licenza": "OGL-om 1.0"
+  },
+  "omsk": {
+   "commons": "Flag of Omsk Oblast.svg",
+   "file": "Flag of Omsk Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Omsk_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Omsk_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 450,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "oregon": {
+   "commons": "Flag of Oregon.svg",
+   "file": "Flag of Oregon.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Oregon.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Oregon.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 768,
+   "altezza": 512,
+   "licenza": "Public domain"
+  },
+  "pakistan": {
+   "commons": "Flag of Pakistan.svg",
+   "file": "Flag of Pakistan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Pakistan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "palau": {
+   "commons": "Flag of Palau.svg",
+   "file": "Flag of Palau.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Palau.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "palestine": {
+   "commons": "Flag of Palestine.svg",
+   "file": "Flag of Palestine.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Palestine.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "panama": {
+   "commons": "Flag of Panama.svg",
+   "file": "Flag of Panama.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Panama.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "papua nuova guinea": {
+   "commons": "Flag of Papua New Guinea.svg",
+   "file": "Flag of Papua New Guinea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Papua_New_Guinea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "paraguay": {
+   "commons": "Flag of Paraguay.svg",
+   "file": "Flag of Paraguay.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Paraguay.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 660,
+   "licenza": "Public domain"
+  },
+  "pennsylvania": {
+   "commons": "Flag of Pennsylvania.svg",
+   "file": "Flag of Pennsylvania.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Pennsylvania.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Pennsylvania.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 740,
+   "altezza": 540,
+   "licenza": "Public domain"
+  },
+  "perm": {
+   "commons": "Flag of Perm Krai.svg",
+   "file": "Flag of Perm Krai.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Perm_Krai.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Perm_Krai.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain",
+   "nota": "Bandiera della regione (kraj); lo screenshot aveva quella della città di Perm'."
+  },
+  "peru": {
+   "commons": "State flag of Peru.svg",
+   "nota": "Versione di stato con lo stemma, come nell'originale (quella civile non lo ha).",
+   "file": "State flag of Peru.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:State_flag_of_Peru.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/State_flag_of_Peru.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "philippinas": {
+   "commons": "Flag of the Philippines.svg",
+   "file": "Flag of the Philippines.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Philippines.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "pitcairn": {
+   "commons": "Flag of the Pitcairn Islands.svg",
+   "file": "Flag of the Pitcairn Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Pitcairn_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "poland": {
+   "commons": "Flag of Poland.svg",
+   "file": "Flag of Poland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Poland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 640,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "polinesia": {
+   "commons": "Flag of French Polynesia.svg",
+   "file": "Flag of French Polynesia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_French_Polynesia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "CC0"
+  },
+  "portugal": {
+   "commons": "Flag of Portugal.svg",
+   "file": "Flag of Portugal.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "primorsky": {
+   "commons": "Flag of Primorsky Krai.svg",
+   "file": "Flag of Primorsky Krai.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Primorsky_Krai.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Primorsky_Krai.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 564,
+   "altezza": 377,
+   "licenza": "Public domain"
+  },
+  "puerto rico": {
+   "commons": "Flag of Puerto Rico.svg",
+   "file": "Flag of Puerto Rico.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Puerto_Rico.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "qatar": {
+   "commons": "Flag of Qatar.svg",
+   "file": "Flag of Qatar.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Qatar.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1400,
+   "altezza": 550,
+   "licenza": "Public domain"
+  },
+  "rhode island": {
+   "commons": "Flag of Rhode Island.svg",
+   "file": "Flag of Rhode Island.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Rhode_Island.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Rhode_Island.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 660,
+   "altezza": 580,
+   "licenza": "Public domain"
+  },
+  "romania": {
+   "commons": "Flag of Romania.svg",
+   "file": "Flag of Romania.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Romania.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "russia": {
+   "commons": "Flag of Russia.svg",
+   "file": "Flag of Russia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Russia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "rwanda": {
+   "commons": "Flag of Rwanda.svg",
+   "file": "Flag of Rwanda.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Rwanda.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "saint helena": {
+   "commons": "Flag of Saint Helena.svg",
+   "file": "Flag of Saint Helena.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Helena.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Saint_Helena.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "saint kitts and nevis": {
+   "commons": "Flag of Saint Kitts and Nevis.svg",
+   "file": "Flag of Saint Kitts and Nevis.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Kitts_and_Nevis.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "saint lucia": {
+   "commons": "Flag of Saint Lucia.svg",
+   "file": "Flag of Saint Lucia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Lucia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "saint maarten": {
+   "commons": "Flag of Sint Maarten.svg",
+   "file": "Flag of Sint Maarten.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sint_Maarten.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 675,
+   "altezza": 450,
+   "licenza": "Public domain"
+  },
+  "saint vincent and grenadines": {
+   "commons": "Flag of Saint Vincent and the Grenadines.svg",
+   "file": "Flag of Saint Vincent and the Grenadines.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Vincent_and_the_Grenadines.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "sakha yakutia": {
+   "commons": "Flag of Sakha.svg",
+   "file": "Flag of Sakha.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sakha.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Flag_of_Sakha.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 256,
+   "licenza": "Public domain"
+  },
+  "sakhalin": {
+   "commons": "Flag of Sakhalin Oblast.svg",
+   "file": "Flag of Sakhalin Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sakhalin_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Flag_of_Sakhalin_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 450,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "samoa": {
+   "commons": "Flag of Samoa.svg",
+   "file": "Flag of Samoa.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Samoa.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "san marino": {
+   "commons": "Flag of San Marino.svg",
+   "file": "Flag of San Marino.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_San_Marino.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "sao tomè e principe": {
+   "commons": "Flag of São Tomé and Príncipe.svg",
+   "file": "Flag of São Tomé and Príncipe.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "sardinia": {
+   "commons": "Flag of Sardinia, Italy.svg",
+   "file": "Flag of Sardinia, Italy.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sardinia,_Italy.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Sardinia%2C_Italy.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 895,
+   "altezza": 600,
+   "licenza": "CC BY-SA 3.0"
+  },
+  "saudi arabia": {
+   "commons": "Flag of Saudi Arabia.svg",
+   "file": "Flag of Saudi Arabia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "scotland": {
+   "commons": "Flag of Scotland.svg",
+   "file": "Flag of Scotland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Scotland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "senegal": {
+   "commons": "Flag of Senegal.svg",
+   "file": "Flag of Senegal.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Senegal.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "serbia": {
+   "commons": "Flag of Serbia.svg",
+   "file": "Flag of Serbia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Serbia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1350,
+   "altezza": 900,
+   "licenza": "Public domain"
+  },
+  "seychelles": {
+   "commons": "Flag of Seychelles.svg",
+   "file": "Flag of Seychelles.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Seychelles.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "sierra leone": {
+   "commons": "Flag of Sierra Leone.svg",
+   "file": "Flag of Sierra Leone.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sierra_Leone.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "singapore": {
+   "commons": "Flag of Singapore.svg",
+   "file": "Flag of Singapore.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "slovak republic": {
+   "commons": "Flag of Slovakia.svg",
+   "file": "Flag of Slovakia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Slovakia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "slovenia": {
+   "commons": "Flag of Slovenia.svg",
+   "file": "Flag of Slovenia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Slovenia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "solomon islands": {
+   "commons": "Flag of the Solomon Islands.svg",
+   "file": "Flag of the Solomon Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Solomon_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "somalia": {
+   "commons": "Flag of Somalia.svg",
+   "file": "Flag of Somalia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Somalia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "somaliland": {
+   "commons": "Flag of Somaliland.svg",
+   "file": "Flag of Somaliland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Somaliland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Somaliland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "south africa": {
+   "commons": "Flag of South Africa.svg",
+   "file": "Flag of South Africa.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "south carolina": {
+   "commons": "Flag of South Carolina.svg",
+   "file": "Flag of South Carolina.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Carolina.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Flag_of_South_Carolina.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "south dakota": {
+   "commons": "Flag of South Dakota.svg",
+   "file": "Flag of South Dakota.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Dakota.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Dakota.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 720,
+   "altezza": 450,
+   "licenza": "Public domain"
+  },
+  "south georgia and south sandwich islands": {
+   "commons": "Flag of South Georgia and the South Sandwich Islands.svg",
+   "file": "Flag of South Georgia and the South Sandwich Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 375,
+   "licenza": "CC0"
+  },
+  "south korea": {
+   "commons": "Flag of South Korea.svg",
+   "file": "Flag of South Korea.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "south sudan": {
+   "commons": "Flag of South Sudan.svg",
+   "file": "Flag of South Sudan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Sudan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1140,
+   "altezza": 570,
+   "licenza": "Public domain"
+  },
+  "spain": {
+   "commons": "Flag of Spain.svg",
+   "file": "Flag of Spain.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 750,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "sri lanka": {
+   "commons": "Flag of Sri Lanka.svg",
+   "file": "Flag of Sri Lanka.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sri_Lanka.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "sudan": {
+   "commons": "Flag of Sudan.svg",
+   "file": "Flag of Sudan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sudan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "suriname": {
+   "commons": "Flag of Suriname.svg",
+   "file": "Flag of Suriname.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Suriname.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "swatziland": {
+   "commons": "Flag of Eswatini.svg",
+   "file": "Flag of Eswatini.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Eswatini.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "sweden": {
+   "commons": "Flag of Sweden.svg",
+   "file": "Flag of Sweden.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Sweden.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1600,
+   "altezza": 1000,
+   "licenza": "Public domain"
+  },
+  "switzerland": {
+   "commons": "Flag of Switzerland.svg",
+   "file": "Flag of Switzerland.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 512,
+   "licenza": "Public domain"
+  },
+  "syria": {
+   "commons": "Flag of Syria.svg",
+   "file": "Flag of Syria (2025-).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Syria_(2025-).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Syria_%282025-%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain",
+   "nota": "Bandiera aggiornata: adottata nel 2025."
+  },
+  "taiwan": {
+   "commons": "Flag of the Republic of China.svg",
+   "file": "Flag of the Republic of China.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_China.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "tajikistan": {
+   "commons": "Flag of Tajikistan.svg",
+   "file": "Flag of Tajikistan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tajikistan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 256,
+   "licenza": "Public domain"
+  },
+  "tanzania": {
+   "commons": "Flag of Tanzania.svg",
+   "file": "Flag of Tanzania.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tanzania.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "tatarstan": {
+   "commons": "Flag of Tatarstan.svg",
+   "file": "Flag of Tatarstan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tatarstan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Tatarstan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain"
+  },
+  "tennessee": {
+   "commons": "Flag of Tennessee.svg",
+   "file": "Flag of Tennessee.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tennessee.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Tennessee.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "texas": {
+   "commons": "Flag of Texas.svg",
+   "file": "Flag of Texas.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Texas.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "thailand": {
+   "commons": "Flag of Thailand.svg",
+   "file": "Flag of Thailand.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "tibet": {
+   "commons": "Flag of Tibet.svg",
+   "file": "Flag of Tibet.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tibet.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1152,
+   "altezza": 720,
+   "licenza": "Public domain",
+   "nota": "Bandiera del governo tibetano in esilio, vietata in Cina: non è la bandiera di uno stato riconosciuto."
+  },
+  "togo": {
+   "commons": "Flag of Togo.svg",
+   "file": "Flag of Togo.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Togo.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 809,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "tokelau": {
+   "commons": "Flag of Tokelau.svg",
+   "file": "Flag of Tokelau.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tokelau.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1800,
+   "altezza": 900,
+   "licenza": "Public domain"
+  },
+  "tomsk": {
+   "commons": "Flag of Tomsk Oblast.svg",
+   "file": "Flag of Tomsk Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tomsk_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Tomsk_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 400,
+   "licenza": "Public domain",
+   "nota": "La bandiera ufficiale è bianca con lo stemma; lo screenshot aveva anche una fascia verde."
+  },
+  "tonga": {
+   "commons": "Flag of Tonga.svg",
+   "file": "Flag of Tonga.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tonga.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 960,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "transnistria": {
+   "commons": "Flag of Transnistria (state).svg",
+   "file": "Flag of Transnistria (state).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Transnistria_(state).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Transnistria_%28state%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "trinidad and tobago": {
+   "commons": "Flag of Trinidad and Tobago.svg",
+   "file": "Flag of Trinidad and Tobago.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Trinidad_and_Tobago.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "tristan da cunha": {
+   "commons": "Flag of Tristan Da Cunha.svg",
+   "file": "Flag of Tristan da Cunha.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tristan_da_Cunha.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Tristan_da_Cunha.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "tunisia": {
+   "commons": "Flag of Tunisia.svg",
+   "file": "Flag of Tunisia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tunisia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "turkey": {
+   "commons": "Flag of Turkey.svg",
+   "file": "Flag of Turkey.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "turkmenistan": {
+   "commons": "Flag of Turkmenistan.svg",
+   "file": "Flag of Turkmenistan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkmenistan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "turks and caicos": {
+   "commons": "Flag of the Turks and Caicos Islands.svg",
+   "file": "Flag of the Turks and Caicos Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Turks_and_Caicos_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "tuva": {
+   "commons": "Flag of Tuva.svg",
+   "file": "Flag of Tuva.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tuva.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Tuva.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "tuvalu": {
+   "commons": "Flag of Tuvalu.svg",
+   "file": "Flag of Tuvalu.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Tuvalu.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "udmurtia": {
+   "commons": "Flag of Udmurtia.svg",
+   "file": "Flag of Udmurtia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Udmurtia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Udmurtia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 540,
+   "altezza": 270,
+   "licenza": "Public domain"
+  },
+  "uganda": {
+   "commons": "Flag of Uganda.svg",
+   "file": "Flag of Uganda.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Uganda.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "ukraine": {
+   "commons": "Flag of Ukraine.svg",
+   "file": "Flag of Ukraine.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 800,
+   "licenza": "Public domain"
+  },
+  "united arab emirates": {
+   "commons": "Flag of the United Arab Emirates.svg",
+   "file": "Flag of the United Arab Emirates.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Arab_Emirates.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "united kingdom": {
+   "commons": "Flag of the United Kingdom.svg",
+   "file": "Flag of the United Kingdom (3-5).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom_(3-5).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "united states": {
+   "commons": "Flag of the United States.svg",
+   "file": "Flag of the United States.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1235,
+   "altezza": 650,
+   "licenza": "Public domain"
+  },
+  "uruguay": {
+   "commons": "Flag of Uruguay.svg",
+   "file": "Flag of Uruguay.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Uruguay.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 341,
+   "licenza": "Public domain"
+  },
+  "utah": {
+   "commons": "Flag of Utah.svg",
+   "file": "Flag of Utah.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Utah.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Utah.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 720,
+   "altezza": 432,
+   "licenza": "Public domain",
+   "nota": "Bandiera aggiornata: cambiata nel 2024."
+  },
+  "uzbekistan": {
+   "commons": "Flag of Uzbekistan.svg",
+   "file": "Flag of Uzbekistan.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Uzbekistan.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 500,
+   "licenza": "Public domain"
+  },
+  "vanuatu": {
+   "commons": "Flag of Vanuatu.svg",
+   "file": "Flag of Vanuatu.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Vanuatu.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 360,
+   "licenza": "Public domain"
+  },
+  "vatican city": {
+   "commons": "Flag of Vatican City (2023–present).svg",
+   "file": "Flag of Vatican City (2023–present).svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Vatican_City_(2023%E2%80%93present).svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_Vatican_City_%282023%E2%80%93present%29.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 1000,
+   "licenza": "Public domain"
+  },
+  "venezuela": {
+   "commons": "Flag of Venezuela.svg",
+   "file": "Flag of Venezuela.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Venezuela.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "vermont": {
+   "commons": "Flag of Vermont.svg",
+   "file": "Flag of Vermont.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Vermont.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Vermont.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "vietnam": {
+   "commons": "Flag of Vietnam.svg",
+   "file": "Flag of Vietnam.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Vietnam.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "virgin islands": {
+   "commons": "Flag of the British Virgin Islands.svg",
+   "file": "Flag of the British Virgin Islands.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_British_Virgin_Islands.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_British_Virgin_Islands.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "virginia": {
+   "commons": "Flag of Virginia.svg",
+   "file": "Flag of Virginia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Virginia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Virginia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 512,
+   "altezza": 341,
+   "licenza": "Public domain"
+  },
+  "wales": {
+   "commons": "Flag of Wales.svg",
+   "file": "Flag of Wales.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Wales.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Flag_of_Wales.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 800,
+   "altezza": 480,
+   "licenza": "Public domain"
+  },
+  "washington": {
+   "commons": "Flag of Washington.svg",
+   "file": "Flag of Washington.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Washington.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Washington.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1600,
+   "altezza": 1000,
+   "licenza": "Public domain"
+  },
+  "west virginia": {
+   "commons": "Flag of West Virginia.svg",
+   "file": "Flag of West Virginia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_West_Virginia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Flag_of_West_Virginia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 760,
+   "altezza": 400,
+   "licenza": "Public domain"
+  },
+  "western sahara": {
+   "commons": "Flag of the Sahrawi Arab Democratic Republic.svg",
+   "file": "Flag of the Sahrawi Arab Democratic Republic.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 600,
+   "altezza": 300,
+   "licenza": "Public domain",
+   "nota": "Bandiera della Repubblica Araba Sahrawi Democratica; il territorio è conteso con il Marocco."
+  },
+  "wisconsin": {
+   "commons": "Flag of Wisconsin.svg",
+   "file": "Flag of Wisconsin.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Wisconsin.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Flag_of_Wisconsin.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 300,
+   "altezza": 200,
+   "licenza": "Public domain"
+  },
+  "wyoming": {
+   "commons": "Flag of Wyoming.svg",
+   "file": "Flag of Wyoming.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Wyoming.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Wyoming.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1000,
+   "altezza": 700,
+   "licenza": "Public domain"
+  },
+  "yamalia": {
+   "commons": "Flag of Yamal-Nenets Autonomous District.svg",
+   "file": "Flag of Yamal-Nenets Autonomous District.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Yamal-Nenets_Autonomous_District.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Yamal-Nenets_Autonomous_District.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "yaroslavl": {
+   "commons": "Flag of Yaroslavl Oblast.svg",
+   "file": "Flag of Yaroslavl Oblast.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Yaroslavl_Oblast.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Yaroslavl_Oblast.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 797,
+   "altezza": 531,
+   "licenza": "Public domain"
+  },
+  "yemen": {
+   "commons": "Flag of Yemen.svg",
+   "file": "Flag of Yemen.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Yemen.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "yugra": {
+   "commons": "Flag of Yugra.svg",
+   "file": "Flag of Yugra.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Yugra.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Yugra.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "zambia": {
+   "commons": "Flag of Zambia.svg",
+   "file": "Flag of Zambia.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Zambia.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 900,
+   "altezza": 600,
+   "licenza": "Public domain"
+  },
+  "zimbabwe": {
+   "commons": "Flag of Zimbabwe.svg",
+   "file": "Flag of Zimbabwe.svg",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Flag_of_Zimbabwe.svg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg",
+   "mime": "image/svg+xml",
+   "larghezza": 1200,
+   "altezza": 600,
+   "licenza": "Public domain"
+  }
+ }
+}

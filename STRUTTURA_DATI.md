@@ -11,6 +11,12 @@ automatico, `test_la_scansione_non_modifica_i_file`, controlla che la scansione 
 eliminati dalla radice i file del vecchio programma C# (`GAME.exe`, `gui.png`, `c1.PNG`,
 `c2.png`, `c3.PNG`, `italy.png`, `New Text Document.txt`). I numeri qui sotto sono aggiornati.
 
+**Bandiere ufficiali dal 12/11/2026**: le immagini originali erano screenshot fatti a mano
+(formati, colori e proporzioni diversi, alcune bandiere superate). Sono state tutte sostituite con
+le versioni di **Wikimedia Commons**, con lo script `tools/aggiorna_bandiere.py` (vedi il
+paragrafo 8). Nomi dei file, cartelle, livelli e gruppi sono rimasti gli stessi; le 223 immagini
+`.gif`/`.jpg` sono diventate `.png` con lo stesso nome.
+
 ## 1. Cartelle e sottocartelle
 
 ```
@@ -37,21 +43,17 @@ continente; ora serve a ricavare il continente di ogni bandiera.
 
 ## 2. Formati e dimensioni delle immagini
 
-| Estensione | File | Contenuto reale |
-|---|---|---|
-| `.png` / `.PNG` (maiuscole e minuscole mescolate) | 735 + 249 | 981 PNG, 3 JPEG |
-| `.gif` | 195 | 195 GIF |
-| `.jpg` | 28 | 28 JPEG |
-| `.svg` | 0 | — (il gioco li supporterebbe comunque, tramite QtSvg) |
+Tutti i 1207 file sono **PNG** (958 con estensione `.png`, 249 con `.PNG`: le maiuscole dei nomi
+originali sono rimaste), resi dal server di Wikimedia a partire dai disegni vettoriali ufficiali.
 
-* Dimensioni molto varie: da 204×102 a 2560×1707 pixel. Le più comuni sono 275×183 (153 file),
-  432×216 (76), 318×159 (60), 2000×1333 (47), 324×216 (36), 2560×1707 (34), 1600×800 (29).
-  Mediana: circa 432×240.
-* Rapporto larghezza/altezza da 0,82 (Nepal, dopo aver tolto lo sfondo, vedi sotto) a 2,03
-  (Isola di Natale), passando per 1,00 di Svizzera e Vaticano. Il gioco mostra **sempre** le
-  bandiere con le proporzioni originali, centrate in un riquadro fisso con un bordo grigio sottile.
-* Modalità colore: 536 a tavolozza, 431 RGBA (con trasparenza), 239 RGB.
-* Il formato viene riconosciuto dal contenuto del file, non dall'estensione.
+* **Altezza uguale per tutti: 600 pixel**; la larghezza segue le **proporzioni ufficiali**, da
+  492 px (Nepal, 0,82) a 1526 px (Qatar, 28:11 = 2,54), passando per 1:1 di Svizzera e Vaticano,
+  5:4 di Monaco, 3:2 dell'Indonesia, 2:1 del Regno Unito. Prima Monaco e Indonesia avevano le
+  stesse proporzioni (3:2) e in Nerd erano di fatto due immagini identiche.
+* 553 immagini RGB e 654 RGBA (il Nepal, che non è rettangolare, ha lo sfondo trasparente).
+* Il gioco mostra **sempre** le bandiere con le proporzioni originali, centrate in un riquadro
+  fisso con un bordo grigio sottile. Il formato viene comunque riconosciuto dal contenuto del
+  file, non dall'estensione: si possono aggiungere anche JPG, GIF, BMP, WEBP o SVG.
 
 ## 3. Convenzione dei nomi dei file
 
@@ -63,8 +65,8 @@ Il nome del file (senza estensione) è il nome dello stato. Non ci sono codici I
 * Alcuni **errori di ortografia**: `cambodgia`, `philippinas`, `swatziland`, `new zeland`,
   `hawai`, `catalunia`, `antartica`, `aaland island`, `island of man`.
 * Stati USA e soggetti federali russi in **inglese con l'iniziale maiuscola**:
-  `New York.png`, `Kabardino-Balkaria.PNG`, `Sakha Yakutia.gif`.
-* Casi particolari: `Birmania - Burma - Myanmar.png` (tre nomi), `sao tomè e principe.gif`
+  `New York.png`, `Kabardino-Balkaria.PNG`, `Sakha Yakutia.png`.
+* Casi particolari: `Birmania - Burma - Myanmar.png` (tre nomi), `sao tomè e principe.png`
   (lettera accentata).
 
 **Identificativo usato dal gioco**: nome del file in minuscolo, senza estensione, con gli spazi
@@ -77,7 +79,7 @@ Alias definiti in `dati/nomi.json`:
 | File | Diventa | Motivo |
 |---|---|---|
 | `jamaica (1).PNG` | `jamaica` | copia identica (file eliminato, l'alias resta nel caso ricompaia) |
-| `south georgia.gif` (nerd) | `south georgia and south sandwich islands` | stessa immagine con nome diverso |
+| `south georgia.png` (nerd) | `south georgia and south sandwich islands` | stessa bandiera con nome diverso |
 | `Georgia.png` (con la **G maiuscola**) | `georgia (usa)` → «Georgia (USA)» | è lo stato USA; `georgia.PNG` minuscolo è lo stato del Caucaso |
 
 ## 4. Informazione sul continente
@@ -158,12 +160,13 @@ domanda né come risposta giusta nella stessa partita.
 
 | File | Problema | Come lo gestisce il gioco |
 |---|---|---|
-| `intermediate/equatorial guinea.png`, `difficult/15/…`, `theworld/africa/…` | estensione `.png` ma contenuto JPEG | letto comunque (formato riconosciuto dal contenuto) |
-| `nerd/2/south georgia.gif`, `nerd/12/south georgia.gif` | stessa immagine di `south georgia and south sandwich islands.gif` | alias in `nomi.json` |
+| `nerd/2/south georgia.png`, `nerd/12/south georgia.png` | stessa bandiera di `south georgia and south sandwich islands.png` | alias in `nomi.json` |
 | `Georgia.png` (stato USA) e `georgia.PNG` (stato) | stesso nome, cambia solo la maiuscola | alias esatto in `nomi.json` |
 | `difficult/0` e `difficult/12` | gruppi con le stesse 11 bandiere | nessun problema (unione dei gruppi) |
-| `niger.png` | due immagini diverse: 600×600 con bande **trasparenti** sopra e sotto (easy, intermediate, theworld) e 600×357 (difficult, nerd) | ogni livello usa la sua; i bordi trasparenti vengono tolti automaticamente al caricamento |
-| `nepal.gif` (easy, intermediate, difficult/17) | bandiera disegnata su una **tela bianca** 2400×1524: la bandiera vera occupa solo la parte sinistra, quindi sembrerebbe un rettangolo | `"ritaglia_sfondo": true` in `nomi.json`: il gioco toglie lo sfondo in memoria e mostra la vera forma verticale |
+
+Risolte con le bandiere di Commons: tre file JPEG con estensione `.png` (Guinea Equatoriale), due
+immagini diverse del Niger (una con bande trasparenti), il Nepal disegnato su una tela bianca
+(ora ha lo sfondo trasparente e la sua forma vera).
 
 Non ci sono file non-immagine né file illeggibili dentro `flags/`. Se un file vuoto o
 danneggiato ricomparisse, il gioco lo sostituirebbe con la stessa bandiera presa da un'altra
@@ -171,8 +174,8 @@ cartella (lo verifica il test `test_file_danneggiato_sostituito_da_altra_cartell
 
 Il ritaglio automatico per colore **non** viene fatto su tutte le bandiere: molte hanno un bordo
 uniforme che fa parte del disegno (Giappone, Russia, Polonia, gli stati USA con lo stemma al
-centro…). Per questo è attivo solo dove indicato in `nomi.json`; quello dei bordi trasparenti
-invece è sempre sicuro.
+centro…). Per questo è attivo solo dove indicato in `nomi.json` (`"ritaglia_sfondo": true`,
+oggi non serve a nessuna bandiera); quello dei bordi trasparenti invece è sempre sicuro.
 
 Il programma ripete questi controlli a ogni avvio: nella schermata **Impostazioni** compare il
 numero di avvisi e, passando il mouse, l'elenco dei file problematici.
@@ -182,5 +185,33 @@ numero di avvisi e, passando il mouse, l'elenco dei file problematici.
 | File | Contenuto |
 |---|---|
 | `livelli.json` | livelli in ordine, cartella di ciascuno, strategia dei distrattori (`area` o `gruppo`), punti per risposta giusta |
-| `nomi.json` | nome italiano, codice ISO e tipo di ogni bandiera; alias; `ritaglia_sfondo` per il Nepal |
+| `nomi.json` | nome italiano, codice ISO e tipo di ogni bandiera; alias; `ritaglia_sfondo` (facoltativo) |
 | `continenti.json` | elenco dei continenti, corrispondenza con le sottocartelle di `theworld`, mappa bandiera → continente |
+
+## 8. Fonti delle immagini
+
+Ogni bandiera viene da **Wikimedia Commons**. La corrispondenza bandiera → file di Commons, con
+licenza e pagina di ciascun file, sta in `tools/fonti_bandiere.json`; lo script
+`tools/aggiorna_bandiere.py` (comandi `info`, `scarica`, `confronto`, `applica`) la usa per
+riscaricare tutto, per esempio quando una bandiera cambia. Licenze: 319 pubblico dominio, 7 CC0,
+5 CC BY-SA (Antartide, Paesi Baschi, Čukotka, Chakassia, Sardegna: chi le ridistribuisce deve
+citare gli autori indicati nella pagina di Commons), Mississippi «copyrighted free use», Oman OGL.
+
+**Casi senza una bandiera ufficiale unica** (scelta spiegata nel campo `nota` del JSON):
+
+| Bandiera | Scelta |
+|---|---|
+| Afghanistan | tricolore 2013–2021, ancora riconosciuto dall'ONU; dal 2021 i talebani usano una bandiera bianca con la shahada |
+| Antartide | nessuna bandiera ufficiale: si usa quella del Trattato Antartico |
+| Irlanda del Nord | nessuna bandiera ufficiale dal 1972 (vale l'Union Jack): si usa la Ulster Banner |
+| Isole Cocos | la bandiera ufficiale è quella australiana (sarebbe identica all'Australia): si usa quella locale |
+| Nuova Caledonia | due bandiere ufficiali usate insieme: si usa solo quella kanak, come nell'originale |
+| Tibet | bandiera del governo in esilio |
+| Sahara Occidentale | bandiera della Repubblica Sahrawi; territorio conteso |
+| Antille Olandesi | territorio sciolto nel 2010: bandiera storica 1986–2010 |
+| Bolivia, Costa Rica, Perù | versione di stato con lo stemma, come negli screenshot originali |
+
+**Bandiere cambiate rispetto agli screenshot**: Mississippi (2021), Minnesota e Utah (2024),
+Kirghizistan (2023), Mauritania (2017), Siria (2025), Martinica (2023, prima c'era la bandiera
+coloniale con i serpenti), Tomsk (bianca con lo stemma, senza la fascia verde); Novosibirsk e Perm'
+ora hanno la bandiera della **regione** (prima c'era quella della città).
