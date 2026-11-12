@@ -218,3 +218,22 @@ def test_info_combinazioni_ridotte(catalogo):
 
 def test_chiave_storico():
     assert chiave_storico("flag", "nerd", "europa") == "flag|nerd|europa"
+
+
+def test_partite_in_inglese_senza_nomi_ripetuti(config):
+    """Con i nomi inglesi le 4 opzioni restano diverse anche nel nome mostrato."""
+    from flaggame.dati import carica_catalogo
+    from .conftest import CARTELLA_BANDIERE
+    if not CARTELLA_BANDIERE.is_dir():
+        return
+    cat = carica_catalogo(CARTELLA_BANDIERE, config, "en")
+    gen = Generatore(cat, rng=random.Random(11))
+    for livello in cat.livelli:
+        for area in ("mondo",) + cat.continenti:
+            if not gen.info(livello, area).giocabile:
+                continue
+            for modalita in MODALITA:
+                for _ in range(20):
+                    for d in gen.genera(modalita, livello, area):
+                        nomi = [o.nome.casefold() for o in d.opzioni]
+                        assert len(set(nomi)) == len(nomi)

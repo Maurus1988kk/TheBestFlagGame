@@ -26,6 +26,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from pathlib import Path
 
+from . import testi
 from .persistenza import leggi_json, scrivi_json_atomico
 
 TUTTE = None  # valore dei filtri per "tutte le modalità/livelli/aree"
@@ -138,7 +139,7 @@ class Classifica:
 
     def aggiungi(self, risultato: Risultato) -> Risultato:
         """Aggiunge un risultato e salva subito."""
-        risultato = Risultato(**{**risultato.__dict__, "nome": pulisci_nome(risultato.nome) or "Anonimo"})
+        risultato = Risultato(**{**risultato.__dict__, "nome": pulisci_nome(risultato.nome) or testi.NOME_ANONIMO})
         self._risultati.append(risultato)
         self.salva()
         return risultato

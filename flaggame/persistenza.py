@@ -71,6 +71,7 @@ class Impostazioni:
     """Preferenze dell'utente (impostazioni.json)."""
 
     tema: str = "chiaro"                 # "chiaro" o "scuro"
+    lingua: str = ""                     # "it", "en"; vuoto = da decidere (lingua di Windows)
     suoni: bool = True
     avanzamento_automatico: bool = True  # passa da solo alla domanda successiva
     ultimo_nome: str = ""

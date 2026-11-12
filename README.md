@@ -1,7 +1,13 @@
 # The Best Flag Game
 
 Gioco a quiz sulle bandiere del mondo, riscritto in Python + PySide6 (Qt 6) a partire dal
-vecchio programma in Visual C#.
+vecchio programma in Visual C#. Il gioco è in **italiano e inglese** (anche i nomi delle bandiere).
+
+> **English**: a flag quiz game for Windows (Guess the Flag / Guess the Country, four levels,
+> leaderboard and statistics), in English and Italian. To play, get the zip (or build it with
+> `crea_zip.bat`), extract it and double-click `FlagGame\FlagGame.exe`. It starts in English
+> unless Windows is in Italian; the language can be changed in Settings. The documentation
+> below is in Italian.
 
 ![Home](docs/home.png)
 
@@ -150,11 +156,11 @@ Per aggiornare le bandiere (per esempio se uno stato cambia bandiera) si usa lo 
 `tools/aggiorna_bandiere.py`, con il Python di build:
 
 ```bat
-set PY=%LOCALAPPDATA%\FlagGame-buildenv\Scripts\python
-%PY% toolsggiorna_bandiere.py info        & rem controlla i file su Commons, aggiorna licenze e pagine
-%PY% toolsggiorna_bandiere.py scarica     & rem scarica i PNG nella cache (salta quelli già pronti)
-%PY% toolsggiorna_bandiere.py confronto   & rem pagina HTML con le bandiere prima/dopo
-%PY% toolsggiorna_bandiere.py applica     & rem sostituisce i file in flags\ (stessi nomi e cartelle)
+set PY=%LOCALAPPDATA%\FlagGame-build\venv\Scripts\python
+%PY% tools\aggiorna_bandiere.py info        & rem controlla i file su Commons, aggiorna licenze e pagine
+%PY% tools\aggiorna_bandiere.py scarica     & rem scarica i PNG nella cache (salta quelli già pronti)
+%PY% tools\aggiorna_bandiere.py confronto   & rem pagina HTML con le bandiere prima/dopo
+%PY% tools\aggiorna_bandiere.py applica     & rem sostituisce i file in flags\ (stessi nomi e cartelle)
 ```
 
 Per cambiare una bandiera basta correggere il campo `"commons"` nel JSON e rilanciare `info`,
@@ -168,15 +174,15 @@ circa un'ora. Il progetto è sotto git: `git checkout -- flags` riporta le immag
    `flags\easy\`. Per Difficile e Nerd mettila nella sottocartella del **gruppo di similarità**
    giusto (o creane una nuova, con almeno 4 bandiere). La stessa bandiera può stare in più
    livelli e in più gruppi.
-2. Facoltativo, ma consigliato: aggiungi il nome italiano in `dati\nomi.json` (in
+2. Facoltativo, ma consigliato: aggiungi i nomi italiano e inglese in `dati\nomi.json` (in
    `dist\FlagGame\dati\` per l'eseguibile). La chiave è il nome del file in minuscolo senza
    estensione (per il file `flags\intermediate\easter island.png`):
 
    ```json
-   "easter island": {"nome": "Isola di Pasqua", "iso": null, "tipo": "territorio"}
+   "easter island": {"nome": "Isola di Pasqua", "nome_en": "Easter Island", "iso": null, "tipo": "territorio"}
    ```
 
-   Senza questa voce il gioco usa il nome del file con le iniziali maiuscole.
+   Senza questa voce (o senza `nome_en`) il gioco usa il nome del file con le iniziali maiuscole.
 3. Continente: aggiungilo in `dati\continenti.json` (`"mappa"`), oppure metti una copia
    dell'immagine nella sottocartella giusta di `flags\theworld\`. Con `null` la bandiera è
    esclusa dal filtro per area ma resta giocabile in «Tutto il mondo».
@@ -198,7 +204,7 @@ I dettagli sui file attuali sono in [STRUTTURA_DATI.md](STRUTTURA_DATI.md).
 
    `"punti"` sono i punti in classifica per ogni risposta giusta (se manca, 100).
 
-3. Facoltativo: nome e descrizione tradotti in `flaggame\testi.py` (`LIVELLI`, `DESCRIZIONE_LIVELLI`).
+3. Facoltativo: nome e descrizione tradotti in `flaggame\lingue\it.py` e `en.py` (`LIVELLI`, `DESCRIZIONE_LIVELLI`).
 
 ## Come funzionano le domande
 
@@ -246,7 +252,15 @@ continente, come gli altri livelli.
   un'immagine disegnata su una tela di colore uniforme c'è `"ritaglia_sfondo": true` in `nomi.json`.
 * Finestra ridimensionabile (minimo 1000×700); posizione e dimensione vengono ricordate.
 * Suoni facoltativi per risposta giusta, sbagliata e fine partita.
-* **Traduzione**: tutti i testi sono in `flaggame\testi.py`.
+* **Lingue**: italiano e inglese, da Impostazioni → Lingua; il cambio vale subito, senza
+  riavviare. Al primo avvio il gioco usa l'italiano se Windows è in italiano, altrimenti
+  l'inglese. Classifica, statistiche e storico non dipendono dalla lingua (salvano solo gli
+  identificativi delle bandiere).
+* **Traduzioni**: i testi dell'interfaccia sono in `flaggame\lingue\it.py` e `en.py` (stessi nomi;
+  un test controlla che coincidano anche i segnaposto come `{n}`); i nomi delle bandiere sono in
+  `dati\nomi.json` (`nome` in italiano, `nome_en` in inglese). Per una nuova lingua: copia
+  `it.py`, traducilo, registralo in `flaggame\testi.py` e aggiungi `nome_<codice>` alle bandiere
+  (se manca, si usa il nome del file).
 
 ## Struttura del codice
 
@@ -261,7 +275,8 @@ flaggame/
   persistenza.py            JSON atomico, impostazioni, storico anti-ripetizione
   suoni.py                  effetti sonori generati con wave
   percorsi.py               cartelle del programma e dei dati utente
-  testi.py                  tutti i testi dell'interfaccia
+  testi.py                  testi nella lingua scelta (imposta_lingua)
+  lingue/it.py, en.py       i testi dell'interfaccia, un file per lingua
   ui/                       interfaccia Qt, una classe per schermata
     finestra.py             finestra principale e navigazione
     schermata_home.py, schermata_gioco.py, schermata_riepilogo.py,

@@ -53,7 +53,8 @@ class GraficoQuote(QWidget):
     def _colonne(self) -> tuple[float, float]:
         """Larghezza della colonna dei nomi e di quella dei valori."""
         nomi = QFontMetrics(font(14))
-        larghezza_nomi = max((nomi.horizontalAdvance(n) for n, _ in self._righe), default=0) + 14
+        # +4 di margine: con la larghezza esatta l'arrotondamento può far scattare i "…"
+        larghezza_nomi = max((nomi.horizontalAdvance(n) for n, _ in self._righe), default=0) + 14 + 4
         larghezza_nomi = min(larghezza_nomi, self.width() * 0.45)
         larghezza_valori = max(QFontMetrics(font(14, SEMIBOLD)).horizontalAdvance("100%"),
                                QFontMetrics(font(13)).horizontalAdvance(testi.STAT_NON_GIOCATO)) + 12

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from PySide6.QtCore import QByteArray, QTimer, QUrl
+from PySide6.QtCore import QByteArray, QLocale, QTimer, QUrl
 from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import QFileDialog, QMainWindow, QVBoxLayout, QWidget
 
@@ -41,6 +41,11 @@ class FinestraPrincipale(QMainWindow):
         cartella = percorsi.cartella_utente()
         self.cartella_utente = cartella
         self.impostazioni = Impostazioni.carica(cartella / "impostazioni.json")
+        if self.impostazioni.lingua not in testi.LINGUE:
+            # primo avvio: italiano se Windows è in italiano, altrimenti inglese
+            self.impostazioni.lingua = testi.lingua_di_sistema(QLocale.system().name())
+            self._salva_impostazioni()
+        testi.imposta_lingua(self.impostazioni.lingua)
         self.config = carica_configurazione(percorsi.cartella_dati_app())
         self.classifica = Classifica(cartella / "classifica.json",
                                      punti_livello={c.id: c.punti for c in self.config.livelli})
@@ -54,7 +59,6 @@ class FinestraPrincipale(QMainWindow):
 
         applica_tema(self.impostazioni.tema, cartella / "cache")
 
-        # schermate
         radice = QWidget()
         radice.setObjectName("radice")
         lay = QVBoxLayout(radice)
@@ -62,7 +66,16 @@ class FinestraPrincipale(QMainWindow):
         self.stack = StackDissolvenza(durata=DURATA_DISSOLVENZA)
         lay.addWidget(self.stack)
         self.setCentralWidget(radice)
+        self._crea_schermate()
 
+        if self.impostazioni.geometria:
+            self.restoreGeometry(QByteArray.fromHex(self.impostazioni.geometria.encode()))
+        else:
+            self.resize(1240, 820)
+        self.carica_bandiere(anima=False)
+
+    def _crea_schermate(self) -> None:
+        """Crea le schermate con i testi della lingua corrente e collega i segnali."""
         self.home = SchermataHome()
         self.gioco = SchermataGioco(self.cache, lambda: self.impostazioni.avanzamento_automatico)
         self.riepilogo = SchermataRiepilogo(self.cache)
@@ -74,12 +87,6 @@ class FinestraPrincipale(QMainWindow):
                   self.schermata_statistiche, self.schermata_impostazioni, self.schermata_cartella):
             self.stack.addWidget(s)
         self._collega()
-
-        if self.impostazioni.geometria:
-            self.restoreGeometry(QByteArray.fromHex(self.impostazioni.geometria.encode()))
-        else:
-            self.resize(1240, 820)
-        self.carica_bandiere(anima=False)
 
     # ------------------------------------------------------------ segnali
 
@@ -105,6 +112,7 @@ class FinestraPrincipale(QMainWindow):
         imp = self.schermata_impostazioni
         imp.indietro.connect(self.vai_home)
         imp.tema_cambiato.connect(self._cambia_tema)
+        imp.lingua_cambiata.connect(self.cambia_lingua)
         imp.suoni_cambiati.connect(self._cambia_suoni)
         imp.auto_cambiato.connect(self._cambia_auto)
         imp.scegli_cartella.connect(self.scegli_cartella)
@@ -139,7 +147,7 @@ class FinestraPrincipale(QMainWindow):
         self.catalogo = None
         if radice is not None:
             try:
-                catalogo = carica_catalogo(radice, self.config)
+                catalogo = carica_catalogo(radice, self.config, self.impostazioni.lingua)
                 if catalogo.totale_bandiere() > 0:
                     self.catalogo = catalogo
             except (ErroreDati, OSError) as e:
@@ -258,9 +266,9 @@ class FinestraPrincipale(QMainWindow):
         self.schermata_statistiche.mostra(self.impostazioni.ultimo_nome)
         self.stack.mostra(self.schermata_statistiche)
 
-    def apri_impostazioni(self) -> None:
+    def apri_impostazioni(self, anima: bool = True) -> None:
         self._aggiorna_impostazioni()
-        self.stack.mostra(self.schermata_impostazioni)
+        self.stack.mostra(self.schermata_impostazioni, anima)
 
     def _aggiorna_impostazioni(self) -> None:
         if self.catalogo is not None:
@@ -294,6 +302,27 @@ class FinestraPrincipale(QMainWindow):
         applica_tema(nome, self.cartella_utente / "cache")
         aggiorna_icone(self)
         self._salva_impostazioni()
+
+    def cambia_lingua(self, codice: str) -> None:
+        """Cambia la lingua: ricrea le schermate con i testi nuovi, ricarica i
+        nomi delle bandiere e torna alle impostazioni. Classifica, storico e
+        statistiche non cambiano (salvano solo identificativi)."""
+        if codice not in testi.LINGUE or codice == self.impostazioni.lingua:
+            return
+        self.impostazioni.lingua = codice
+        self._salva_impostazioni()
+        testi.imposta_lingua(codice)
+        self.gioco.ferma()
+        self.partita = None
+        self._ritorno_classifica = None
+        vecchie = [self.stack.widget(i) for i in range(self.stack.count())]
+        self._crea_schermate()
+        if self.carica_bandiere(anima=False):
+            self.apri_impostazioni(anima=False)
+        for schermata in vecchie:
+            self.stack.removeWidget(schermata)
+            schermata.deleteLater()
+        aggiorna_icone(self)
 
     def _cambia_suoni(self, attivi: bool) -> None:
         self.impostazioni.suoni = attivi

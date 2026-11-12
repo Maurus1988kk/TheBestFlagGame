@@ -171,3 +171,35 @@ def test_configurazione_predefinita_senza_json(tmp_path):
     assert cfg.livelli[3].distrattori == "gruppo"
     assert os.path.isdir(tmp_path)
     assert Path(tmp_path).exists()
+
+
+def test_nomi_inglesi_completi_e_distinti(config):
+    """Ogni bandiera ha il nome inglese e non ci sono due bandiere con lo stesso nome."""
+    senza = [k for k, v in config.nomi.items() if not v.get("nome_en")]
+    assert senza == []
+    nomi = [v["nome_en"].casefold() for v in config.nomi.values()]
+    assert len(nomi) == len(set(nomi))
+
+
+def test_catalogo_in_inglese(config):
+    if not CARTELLA_BANDIERE.is_dir():
+        return
+    cat = carica_catalogo(CARTELLA_BANDIERE, config, "en")
+    assert cat.nome("germany") == "Germany"
+    assert cat.nome("cile") == "Chile"
+    assert cat.nome("georgia") == "Georgia"
+    assert cat.nome("georgia (usa)") == "Georgia (US state)"
+    assert cat.nome("sakha yakutia") == "Sakha (Yakutia)"
+    assert cat.totale_bandiere() == 333
+    assert not [a for a in cat.anomalie if a.tipo == "senza_nome"]
+
+
+def test_nome_inglese_mancante_usa_il_nome_del_file(config, tmp_path):
+    radice = tmp_path / "flags"
+    (radice / "easy").mkdir(parents=True)
+    (radice / "easy" / "easter island.png").write_bytes(PNG_MINIMO)
+    (radice / "easy" / "italy.png").write_bytes(PNG_MINIMO)
+    cat = carica_catalogo(radice, config, "en")
+    assert cat.nome("easter island") == "Easter Island"        # non in nomi.json: nome del file
+    assert cat.nome("italy") == "Italy"
+    assert carica_catalogo(radice, config, "it").nome("italy") == "Italia"

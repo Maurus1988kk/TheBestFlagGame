@@ -321,3 +321,55 @@ def test_cartella_non_trovata(app, eccezioni, monkeypatch, tmp_path):
     salva(f, "30_cartella_non_trovata")
     f.close()
     assert eccezioni == []
+
+
+@pytest.mark.skipif(not CARTELLA_BANDIERE.is_dir(), reason="cartella flags non presente")
+def test_cambio_lingua(app, eccezioni):
+    """Italiano -> inglese dalle impostazioni: testi e nomi delle bandiere cambiano
+    subito, la scelta viene ricordata, la classifica resta; poi di nuovo italiano."""
+    from flaggame.persistenza import Impostazioni
+    errori_qt.clear()
+    f = nuova_finestra()
+    assert f.home.btn_gioca.text().strip() == "Gioca"
+    f.apri_impostazioni()
+    QTest.qWait(350)
+    f.schermata_impostazioni.seg_lingua.cambiato.emit("en")    # come un clic su "English"
+    QTest.qWait(300)
+    assert f.impostazioni.lingua == "en"
+    assert f.stack.currentWidget() is f.schermata_impostazioni
+    assert f.schermata_impostazioni.seg_lingua.valore() == "en"
+    assert f.home.btn_gioca.text().strip() == "Play"
+    assert f.catalogo.nome("italy") == "Italy"
+    assert Impostazioni.carica(percorsi.cartella_utente() / "impostazioni.json").lingua == "en"
+    salva(f, "40_impostazioni_inglese")
+    f.vai_home()
+    QTest.qWait(400)
+    salva(f, "41_home_inglese")
+
+    f.avvia_partita("country", "facile", "mondo")
+    QTest.qWait(500)
+    d = f.partita.domanda_corrente
+    assert f.gioco.lbl_stato.text() == d.risposta.nome == f.catalogo.nome(d.risposta.id)
+    salva(f, "42_gioco_inglese")
+    gioca_fino_alla_fine(f)
+    salva(f, "43_riepilogo_inglese")
+    f.riepilogo.campo_nome.setText("Player")
+    f.riepilogo.btn_salva.click()
+    QTest.qWait(450)
+    salva(f, "44_classifica_inglese")
+    f.apri_statistiche()
+    QTest.qWait(400)
+    assert f.schermata_statistiche.t_partite.lbl_valore.text() == "1"
+    salva(f, "45_statistiche_inglese")
+
+    f._cambia_tema("scuro")          # le schermate distrutte non devono ricevere il segnale
+    QTest.qWait(100)
+    f._cambia_tema("chiaro")
+    f.cambia_lingua("it")
+    QTest.qWait(300)
+    assert f.home.btn_gioca.text().strip() == "Gioca"
+    assert f.catalogo.nome("italy") == "Italia"
+    assert len(f.classifica) == 1                  # la classifica non dipende dalla lingua
+    f.close()
+    assert eccezioni == []
+    assert [e for e in errori_qt if "QFont::setPointSize" not in e] == []

@@ -185,7 +185,7 @@ numero di avvisi e, passando il mouse, l'elenco dei file problematici.
 | File | Contenuto |
 |---|---|
 | `livelli.json` | livelli in ordine, cartella di ciascuno, strategia dei distrattori (`area` o `gruppo`), punti per risposta giusta |
-| `nomi.json` | nome italiano, codice ISO e tipo di ogni bandiera; alias; `ritaglia_sfondo` (facoltativo) |
+| `nomi.json` | nome italiano (`nome`) e inglese (`nome_en`), codice ISO e tipo di ogni bandiera; alias; `ritaglia_sfondo` (facoltativo) |
 | `continenti.json` | elenco dei continenti, corrispondenza con le sottocartelle di `theworld`, mappa bandiera → continente |
 
 ## 8. Fonti delle immagini

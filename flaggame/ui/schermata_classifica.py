@@ -131,7 +131,7 @@ class SchermataClassifica(QWidget):
         filtri.setSpacing(24)
         colonna = QVBoxLayout()
         colonna.setSpacing(6)
-        colonna.addWidget(etichetta_sezione("Modalità"))
+        colonna.addWidget(etichetta_sezione(testi.HOME_SEZIONE_MODALITA))
         self.seg_modalita = Segmenti([("flag", testi.MODALITA["flag"]),
                                       ("country", testi.MODALITA["country"]),
                                       (TUTTE, testi.CLASSIFICA_TUTTE_MODALITA)], altezza=42)
@@ -190,7 +190,12 @@ class SchermataClassifica(QWidget):
         self.seg_modalita.cambiato.connect(lambda *_: self.aggiorna())
         self.combo_livello.currentIndexChanged.connect(lambda *_: self.aggiorna())
         self.combo_area.currentIndexChanged.connect(lambda *_: self.aggiorna())
-        tema().cambiato.connect(lambda *_: self.aggiorna())
+        # metodo e non lambda: Qt scollega il segnale quando la schermata viene
+        # distrutta (succede quando si cambia lingua e le schermate vengono ricreate)
+        tema().cambiato.connect(self._su_cambio_tema)
+
+    def _su_cambio_tema(self, *_):
+        self.aggiorna()
 
     # ------------------------------------------------------------- dati
 

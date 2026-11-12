@@ -40,6 +40,7 @@ class SchermataImpostazioni(QWidget):
 
     indietro = Signal()
     tema_cambiato = Signal(str)
+    lingua_cambiata = Signal(str)
     suoni_cambiati = Signal(bool)
     auto_cambiato = Signal(bool)
     scegli_cartella = Signal()
@@ -87,6 +88,10 @@ class SchermataImpostazioni(QWidget):
                                  altezza=40)
         self.seg_tema.setFixedWidth(220)
         lay.addWidget(riga_impostazione(testi.IMP_TEMA, testi.IMP_TEMA_DESCR, self.seg_tema)[0])
+        lay.addWidget(separatore())
+        self.seg_lingua = Segmenti(list(testi.LINGUE.items()), altezza=40)
+        self.seg_lingua.setFixedWidth(220)
+        lay.addWidget(riga_impostazione(testi.IMP_LINGUA, testi.IMP_LINGUA_DESCR, self.seg_lingua)[0])
         lay.addWidget(separatore())
         lay.addSpacing(14)
         lay.addWidget(etichetta_sezione(testi.IMP_GIOCO))
@@ -136,6 +141,7 @@ class SchermataImpostazioni(QWidget):
         radice.addWidget(scorrimento, 1)
 
         self.seg_tema.cambiato.connect(self.tema_cambiato)
+        self.seg_lingua.cambiato.connect(self.lingua_cambiata)
         self.int_suoni.toggled.connect(self.suoni_cambiati)
         self.int_auto.toggled.connect(self.auto_cambiato)
         self.btn_cartella.clicked.connect(self.scegli_cartella)
@@ -147,6 +153,7 @@ class SchermataImpostazioni(QWidget):
     def mostra(self, imp: Impostazioni, cartella_bandiere: str, info_cartella: str, dettagli_anomalie: str,
                cartella_dati: str) -> None:
         self.seg_tema.imposta_valore(imp.tema)
+        self.seg_lingua.imposta_valore(imp.lingua)
         self.int_suoni.imposta(imp.suoni)
         self.int_auto.imposta(imp.avanzamento_automatico)
         self.lbl_cartella.setText(cartella_bandiere)

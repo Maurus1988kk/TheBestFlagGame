@@ -334,8 +334,15 @@ def _rel(percorso: Path, radice: Path) -> str:
         return percorso.as_posix()
 
 
-def carica_catalogo(radice: Path | str, config: Configurazione) -> Catalogo:
-    """Scansiona la radice delle bandiere e costruisce il catalogo."""
+def nome_bandiera(info: dict, lingua: str) -> str | None:
+    """Nome di una bandiera da nomi.json nella lingua richiesta: ``nome`` è
+    l'italiano, ``nome_<codice>`` le altre lingue. ``None`` se manca."""
+    return info.get("nome") if lingua == "it" else info.get(f"nome_{lingua}")
+
+
+def carica_catalogo(radice: Path | str, config: Configurazione, lingua: str = "it") -> Catalogo:
+    """Scansiona la radice delle bandiere e costruisce il catalogo, con i nomi
+    delle bandiere nella ``lingua`` indicata ("it", "en"...)."""
     radice = Path(radice)
     if not radice.is_dir():
         raise ErroreDati(f"Cartella non trovata: {radice}")
@@ -456,7 +463,8 @@ def carica_catalogo(radice: Path | str, config: Configurazione) -> Catalogo:
     bandiere: dict[str, Bandiera] = {}
     for id_b in sorted(usati):
         info = config.nomi.get(id_b, {})
-        nome = info.get("nome") or nome_da_file(stem_di.get(id_b, id_b))
+        # senza traduzione si usa il nome del file (i file hanno quasi tutti nomi inglesi)
+        nome = nome_bandiera(info, lingua) or nome_da_file(stem_di.get(id_b, id_b))
         if not info:
             anomalie.append(Anomalia(id_b, "senza_nome",
                                      f"manca in nomi.json: uso il nome \"{nome}\""))

@@ -2,7 +2,7 @@
 
 Dentro c'è la cartella ``FlagGame`` pronta da usare: l'eseguibile creato da
 build.bat, la cartella ``flags`` accanto a FlagGame.exe (dove il gioco la cerca
-per prima) e un LEGGIMI.txt. Chi lo riceve lo estrae e fa doppio clic su
+per prima), LEGGIMI.txt in italiano e README.txt in inglese. Chi lo riceve lo estrae e fa doppio clic su
 FlagGame.exe: non serve installare niente. I dati dell'utente (classifica,
 impostazioni) stanno in %APPDATA% e non finiscono mai nello zip.
 
@@ -67,6 +67,40 @@ Le immagini delle bandiere vengono da Wikimedia Commons (quasi tutte di pubblico
 dominio; licenze e autori nel progetto, file tools/fonti_bandiere.json).
 """
 
+README_EN = f"""{NOME_APP} {VERSIONE}
+{'=' * (len(NOME_APP) + len(VERSIONE) + 1)}
+
+A quiz game about the flags of the world: Guess the Flag and Guess the Country,
+four levels (Easy, Intermediate, Hard, Nerd), leaderboard and statistics.
+The game is in English and Italian: it starts in Italian on an Italian Windows,
+in English everywhere else. You can switch language in Settings.
+
+HOW TO START
+1. Extract the whole zip (right click > "Extract All..."): the game does not run
+   from inside the zip.
+2. Open the FlagGame folder and double-click FlagGame.exe.
+   Nothing to install. Requires 64-bit Windows 10 or 11.
+
+"WINDOWS PROTECTED YOUR PC"
+The program is not digitally signed, so on first start Windows may show this
+warning: click "More info" and then "Run anyway".
+If your antivirus blocks it, add an exception for the FlagGame folder.
+
+KEEP THE FILES TOGETHER
+The "flags" folder must stay next to FlagGame.exe, together with "_internal" and
+"dati". You can move the whole FlagGame folder wherever you like.
+
+WHERE THE LEADERBOARD AND SETTINGS ARE SAVED
+In %APPDATA%\\FlagGame ("Open folder" button in the game's Settings).
+To uninstall, just delete the FlagGame folder and the one in %APPDATA%.
+
+KEYBOARD SHORTCUTS
+1-4 to answer, Enter or Space to go on, Esc to quit the game.
+
+The flag images come from Wikimedia Commons (almost all public domain; licenses
+and authors in the project, file tools/fonti_bandiere.json).
+"""
+
 
 def _aggiungi_cartella(zf: zipfile.ZipFile, cartella: Path, prefisso: str) -> int:
     n = 0
@@ -92,14 +126,15 @@ def crea_zip() -> Path:
     with zipfile.ZipFile(temporaneo, "w", compresslevel=9) as zf:
         n = _aggiungi_cartella(zf, CARTELLA_EXE, "FlagGame")
         n += _aggiungi_cartella(zf, CARTELLA_BANDIERE, "FlagGame/flags")
-        zf.writestr("FlagGame/LEGGIMI.txt", LEGGIMI.replace("\n", "\r\n").encode("utf-8"),
-                    compress_type=zipfile.ZIP_DEFLATED)
+        for nome, testo in (("LEGGIMI.txt", LEGGIMI), ("README.txt", README_EN)):
+            zf.writestr(f"FlagGame/{nome}", testo.replace("\n", "\r\n").encode("utf-8"),
+                        compress_type=zipfile.ZIP_DEFLATED)
     with zipfile.ZipFile(temporaneo) as zf:
         rotto = zf.testzip()
         if rotto:
             raise SystemExit(f"Zip danneggiato: {rotto}")
     os.replace(temporaneo, destinazione)
-    print(f"Creato {destinazione} ({n + 1} file, {destinazione.stat().st_size / 1e6:.0f} MB)")
+    print(f"Creato {destinazione} ({n + 2} file, {destinazione.stat().st_size / 1e6:.0f} MB)")
     return destinazione
 
 
